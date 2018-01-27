@@ -280,45 +280,6 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 			
 			?>
 
-
-    <section class="carousel-js-css baner container resize cycleFrame">
-        <!--remove class="resize" if not resize-->
-        <div class="content-carousel">
-            <ul class="cycle"><!--remove class="cycle" if not cycle--><?php
-
-			$sql_q = "SELECT * FROM slgal ORDER BY sort ASC";
-			$sql_res = $main->q($sql_q);
-
-			while ($rows = mysql_fetch_array($sql_res))
-	{
-
-			?>
-                                    <li data-description="<?php echo $rows["collname"]; ?>">
-                                                    <a href="#"><img data-original="/downloads/<?php echo $rows["pho"]; ?>" src="/templates/toolsMarket/images/blank.gif" alt=""/></a>
-                                                </li><?php
-	}
-				?>
-
-                                  
-                            </ul>
-            <div class="preloader"></div>
-            <div class="frame-frame-pager">
-                <div class="frame-scroll-pane">
-                    <div class="frame-pager content-carousel">
-                        <ol class="pager"></ol>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="group-button-carousel">
-            <button type="button" class="prev arrow">
-                <span class="icon_arrow_p"></span>
-            </button>
-            <button type="button" class="next arrow">
-                <span class="icon_arrow_n"></span>
-            </button>
-        </div>
-    </section>
 	
 <?php 
 
