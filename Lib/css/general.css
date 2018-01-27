@@ -1,0 +1,22 @@
+td { font-family:Verdana, Arial, Helvetica, sans-serif; color: #666666; font-size: 84%; }
+
+h1 { font-size: 120%; margin-bottom: 8px; }
+h2 { font-size: 114%; color:#808080; margin-bottom: 5px; }
+
+a:link { color: #006DB1; }
+
+.small { font-size: 85%; }
+
+.biglink { font-size: 114%; }
+
+.menu { color: #006DB1; font-weight: bold; font-size: 11px; }
+a:link.menu { color: #006DB1; }
+a:visited.menu { color: #006DB1; }
+a:hover.menu { color: #1593D1; }
+
+.menu2act { color: #FA7D37; font-weight: bold; font-size: 11px; }
+a:link.menu2act { color: #FA7D37; }
+a:visited.menu2act { color: #FA7D37; }
+a:hover.menu2act { color: #1593D1; }
+
+.menuact { color: #4C4C4C; font-weight: bold; font-size: 11px; }

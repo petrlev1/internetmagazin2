@@ -1,0 +1,33 @@
+TABLE.content_table {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+TABLE.content_table TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+
+TD {
+	FONT-SIZE: 15px; TEXT-ALIGN: left
+}
+
+
+.catalogTit {
+background-color:#D4D4D4;
+}
+.catalogTitFont {
+color: #ffffff; font-size: 85%; font-weight:bold;
+margin-left: 2px; margin-right: 2px; margin-top: 5px; margin-bottom: 5px;
+}
+.catalogLineColor {
+background-color:#ffffff;
+}
+.catalogVLineColor {
+background-color:#DDD3C7;
+}
+.formbox { font-family: 
+Tahoma, Verdana, Arial; font-size: 10px; color: #000000; background-color: #FFFFFF; 
+border: 1px solid gray; } 
+
+.small {
+    font-size: 86%;
+	color: #000000;
+}

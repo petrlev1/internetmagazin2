@@ -1,0 +1,2293 @@
+#specpredl li {
+    background: rgba(0, 0, 0, 0) url("/images/check-red.png") no-repeat scroll left top !important;
+    line-height: 25px !important;
+    list-style: outside none none !important;
+	font-size:16px !important;
+	color:red !important;
+	margin: 10px 15px 10px 0 !important;
+	padding-left: 25px !important;
+
+}
+.spec-center {
+	 padding-top: 15px !important;
+}
+#specpredl a {
+
+ 
+	font-size:15px !important;
+	color:red !important;
+	font-weight: bold;
+
+}
+
+.red-price {
+
+font-weight: bold !important;
+font-size:16px !important; }
+
+.old-price {
+font-size:16px !important;
+font-weight: bold !important;
+}
+
+.tolshina {
+font-size:16px !important; 
+}
+.big-price {
+font-size:18px !important; }
+#pechat {text-align: center !important; 
+}
+
+.price_price tr
+	{mso-height-source:auto;}
+.price_price col
+	{mso-width-source:auto;}
+.price_price br
+	{mso-data-placement:same-cell;}
+.price_price .style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:204;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½;
+	mso-style-id:0;}
+.price_price .style56
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:"Arial Cyr", sans-serif;
+	mso-font-charset:204;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ 26\.04\.2007";}
+.price_price .font5
+	{color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:204;}
+.price_price .font10
+	{color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:204;}
+.price_price td
+	{
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:10.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:204;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.price_price .xl68
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl69
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl70
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl71
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl72
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl73
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl74
+	{
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;}
+.price_price .xl75
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl76
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl77
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl78
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl79
+	{
+	font-size:12.0pt;}
+.price_price .xl80
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl81
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl82
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl83
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl84
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl85
+	{
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl86
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl87
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl88
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl89
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl90
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl91
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl92
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl93
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl94
+	{
+	text-align:center;
+	vertical-align:middle;}
+.price_price .xl95
+	{
+	font-size:14.0pt;
+	font-weight:700;}
+.price_price .xl96
+	{
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;}
+.price_price .xl97
+	{
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;}
+.price_price .xl98
+	{
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	vertical-align:middle;}
+.price_price .xl99
+	{
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	vertical-align:middle;}
+.price_price .xl100
+	{
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	vertical-align:middle;
+	white-space:normal;}
+.price_price .xl101
+	{
+	font-style:italic;}
+.price_price .xl102
+	{
+	text-align:center;
+	vertical-align:middle;
+	white-space:normal;}
+.price_price .xl103
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl104
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl105
+	{
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl106
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl107
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;}
+.price_price .xl108
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl109
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	border:1pt solid windowtext;}
+.price_price .xl110
+	{
+	border:1pt solid windowtext;}
+.price_price .xl111
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl112
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl113
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl114
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl115
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl116
+	{
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl117
+	{
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl118
+	{
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl119
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl120
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;}
+.price_price .xl121
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl122
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl123
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl124
+	{
+	color:windowtext;
+	text-align:center;
+	vertical-align:middle;
+	background:white;
+	
+	white-space:normal;}
+.price_price .xl125
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl126
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl127
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl128
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl129
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl130
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl131
+	{
+	font-size:12.0pt;
+	font-style:italic;}
+.price_price .xl132
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl133
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl134
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl135
+	{
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;
+	white-space:normal;}
+.price_price .xl136
+	{
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid black;
+	white-space:normal;}
+.price_price .xl137
+	{
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:none;
+	border-left:1pt solid black;
+	white-space:normal;}
+.price_price .xl138
+	{
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl139
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl140
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:Standard;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl141
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:Standard;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid black;}
+.price_price .xl142
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl143
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl144
+	{
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl145
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl146
+	{
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl147
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl148
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl149
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl150
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl151
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl152
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl153
+	{
+	color:windowtext;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:white;
+	}
+.price_price .xl154
+	{
+	color:windowtext;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:white;
+	
+	white-space:normal;}
+.price_price .xl155
+	{
+	color:windowtext;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:white;
+	
+	white-space:normal;}
+.price_price .xl156
+	{
+	color:windowtext;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:white;
+	
+	white-space:normal;}
+.price_price .xl157
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl158
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl159
+	{
+	mso-number-format:"\#\,\#\#0\.00_ \;\[Red\]\\-\#\,\#\#0\.00\\ ";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl160
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl161
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	
+	white-space:normal;}
+.price_price .xl162
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl163
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:Standard;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl164
+	{
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl165
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl166
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl167
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl168
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl169
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl170
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl171
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl172
+	{
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl173
+	{
+	text-align:center;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl174
+	{
+	border:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl175
+	{
+	text-align:center;
+	border:1pt solid windowtext;}
+.price_price .xl176
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl177
+	{
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl178
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl179
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl180
+	{
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl181
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl182
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl183
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl184
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl185
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl186
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;}
+.price_price .xl187
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl188
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl189
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl190
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl191
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl192
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl193
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl194
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl195
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl196
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl197
+	{
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;}
+.price_price .xl198
+	{
+	white-space:normal;}
+.price_price .xl199
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	
+	white-space:normal;}
+.price_price .xl200
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	
+	white-space:normal;}
+.price_price .xl201
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	
+	white-space:normal;}
+.price_price .xl202
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl203
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl204
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl205
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl206
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl207
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl208
+	{
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl209
+	{
+	color:red;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl210
+	{
+	color:red;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl211
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl212
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl213
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:"\#\,\#\#0";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid black;}
+.price_price .xl214
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl215
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid black;}
+.price_price .xl216
+	{mso-style-parent:style56;
+	color:black;
+	font-size:14.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl217
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl218
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl219
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;
+	background:silver;
+	mso-pattern:#CCCCFF none;}
+.price_price .xl220
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;
+	background:silver;
+	mso-pattern:#CCCCFF none;}
+.price_price .xl221
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:none;
+	border-left:1pt solid black;
+	background:silver;
+	mso-pattern:#CCCCFF none;}
+.price_price .xl222
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid black;
+	background:silver;
+	mso-pattern:#CCCCFF none;}
+.price_price .xl223
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:silver;
+	mso-pattern:#CCCCFF none;
+	white-space:normal;}
+.price_price .xl224
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl225
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid windowtext;}
+.price_price .xl226
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl227
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid windowtext;}
+.price_price .xl228
+	{mso-style-parent:style56;
+	color:black;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid black;
+	border-right:1pt solid black;
+	border-bottom:1pt solid black;
+	border-left:1pt solid black;}
+.price_price .xl229
+	{mso-style-parent:style56;
+	color:black;
+	mso-number-format:"\#\,\#\#0\.00\0022ï¿½\.\0022";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	mso-pattern:#FFFFCC none;}
+.price_price .xl230
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl231
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#BFBFBF;
+	}
+.price_price .xl232
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl233
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl234
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.price_price .xl235
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl236
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl237
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl238
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl239
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	white-space:normal;}
+.price_price .xl240
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl241
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+.price_price .xl242
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl243
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.price_price .xl244
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl245
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl246
+	{
+	font-size:11pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl247
+	{
+	font-size:11pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl248
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl249
+	{
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl250
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl251
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl252
+	{
+	font-size:11pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl253
+	{
+	font-size:11pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	white-space:normal;}
+.price_price .xl254
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl255
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl256
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl257
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl258
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl259
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl260
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl261
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl262
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl263
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl264
+	{
+	font-size:11pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	
+	white-space:normal;}
+.price_price .xl265
+	{
+	font-size:11pt;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	
+	white-space:normal;}
+.price_price .xl266
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	mso-pattern:#CCCCFF none;}
+.price_price .xl267
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl268
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl269
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl270
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl271
+	{
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl272
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl273
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl274
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl275
+	{
+	font-size:12.0pt;
+	font-weight:700;
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl276
+	{
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl277
+	{
+	text-align:center;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl278
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#BFBFBF;
+	}
+.price_price .xl279
+	{
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	}
+.price_price .xl280
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl281
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:none;}
+.price_price .xl282
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl283
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl284
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	}
+.price_price .xl285
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;}
+.price_price .xl286
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl287
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#A6A6A6;
+	}
+.price_price .xl288
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl289
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#A6A6A6;
+	}
+.price_price .xl290
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl291
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl292
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl293
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#A6A6A6;
+	}
+.price_price .xl294
+	{
+	font-size:12.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl295
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	}
+.price_price .xl296
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;}
+.price_price .xl297
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl298
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	mso-number-format:"\#\,\#\#0\.00\0022ï¿½\.\0022";
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#92D050;
+	mso-pattern:#FFFFCC none;}
+.price_price .xl299
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;}
+.price_price .xl300
+	{mso-style-parent:style56;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;
+	background:#A6A6A6;
+	mso-pattern:#CCCCFF none;
+	white-space:normal;}
+.price_price .xl301
+	{mso-style-parent:style56;
+	color:black;
+	font-family:"Times New Roman", serif;
+	mso-font-charset:204;
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:1pt solid windowtext;}
+.price_price .xl302
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:none;
+	border-left:none;
+	background:#BFBFBF;
+	}
+.price_price .xl303
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#BFBFBF;
+	}
+.price_price .xl304
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#92D050;
+	}
+.price_price .xl305
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#92D050;
+	}
+.price_price .xl306
+	{
+	font-size:12.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-decoration:underline;
+	text-underline-style:single;
+	text-align:center;
+	border-top:none;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.price_price .xl307
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:none;
+	border-bottom:1pt solid windowtext;
+	border-left:1pt solid windowtext;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl308
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	background:#BFBFBF;
+	
+	white-space:normal;}
+.price_price .xl309
+	{
+	text-align:center;
+	vertical-align:middle;
+	border-top:1pt solid windowtext;
+	border-right:1pt solid windowtext;
+	border-bottom:1pt solid windowtext;
+	border-left:none;
+	white-space:normal;}
+.price_price .redcena
+	{
+	text-align:center;
+	vertical-align:middle;
+	border:1pt solid windowtext;
+	color:#FF0000;}
+.price_price .super
+	{
+	font-size:18.0pt;
+	font-weight:bold;
+	color:#FF0000;
+	}
+.price_price .pricetabletop
+	{
+	font-size:13.0pt;
+	text-align:center;
+	vertical-align:middle;
+	background:#F0F0F0;
+	}
+.price_price .pricetabletop2
+	{
+	text-align:center;
+	vertical-align:middle;
+	background:#F0F0F0;
+        font-size: 11pt;
+	}
+	.price_price .pricetabletop3
+	{
+	text-align:center;
+	vertical-align:middle;
+	background:#F0F0F0;
+        font-size: 11pt;
+		border: medium none !important;
+	}
+	.price_price .pricetabletop4
+	{
+	text-align:center;
+	vertical-align:middle;
+	background:#F0F0F0;
+        font-size: 11pt;
+		border: medium none !important;
+
+	}

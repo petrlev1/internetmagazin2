@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Редактирование блока "Ссылки"</h1>
+<FORM METHOD="POST" name="myform" ACTION="/admin/?topic=links">
+
+<!--
+<div style="margin-top: 10px;">Перейти на другую страницу&nbsp;&nbsp;
+<SELECT NAME="page2" class="box2">
+<option value="">Список страниц</option>
+{pages_list}
+</SELECT>&nbsp;&nbsp;<INPUT TYPE="button" value="Перейти" onClick="location.href='/admin/?topic=create_page2&page='+ page2.value"></div>
+<br><br>
+-->
+{error}
+<div style="margin-top: 10px;">Название ссылки</div>
+<input type="text" name="link_name" value="{link_name}" size="127" class="box2">
+<div style="margin-top: 10px;">Описание ссылки</div>
+<TEXTAREA NAME="link_desc" ROWS="5" COLS="79" class="box2">{link_desc}</TEXTAREA>
+<div style="margin-top: 10px;">Адрес ссылки</div>
+<input type="text" name="link_addr" value="{link_addr}" size="127" class="box2">
+<INPUT TYPE="hidden" NAME="link_upd" value="{upd_rec}">
+<br>
+<input type="submit" value="Сохранить">
+
+      
+
+	  
+		  
+		 </td>
+         </tr>
+        </table>	
+	  </form>
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=links" name="EditForm"><br>
+<INPUT TYPE="hidden" value="1" NAME="change">
+<h2>Список объектов данной страницы</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+	<td class="catalogTit"><div class="catalogTitFont">&nbsp;&nbsp;Ссылка:</div></td>
+    <td class="catalogTit"><div class="catalogTitFont">&nbsp;&nbsp;Дата:&nbsp;&nbsp;</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Скр.</div></td>
+    <td class="catalogTit"><div class="catalogTitFont">Врх</div></td>
+    <td class="catalogTit"><div class="catalogTitFont">Вниз</div></td>
+    <td class="catalogTit"><div class="catalogTitFont">Ред.</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>
+	<td class="catalogTit"><div class="catalogTitFont"><font color="red">Уд.</font></div></td>
+	
+  </tr>

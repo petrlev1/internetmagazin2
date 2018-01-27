@@ -1,0 +1,90 @@
+<!-- ezEdit
+ 
+  file:href.htc
+  copyright:2000 SiteObjects, Inc.
+  author:Brett Suwyn
+  mailto:ezEdit@siteobjects.com
+  http://www.siteobjects.com/
+  
+  version: 1.0
+  date:  8/8/2000
+  
+  notes:
+    8/5/2000: Added edit capabilities
+ -->
+<html>
+<head><title>Добавление гиперссылки</title>
+<style>
+  body, .button, fieldset{background: buttonface;font-family:"MS Sans Serif";font-size:9pt;margin:0px;}
+  .text {font-family:"MS Sans Serif";font-size:9pt;padding:5px 0px 5px 0px;}
+  .inputs {padding-right:15px;}
+</style>
+<script>
+function setSelection(el,val){
+  if (el.options[el.selectedIndex] != val){
+    for(var x=0;x<el.options.length;x++){
+      if (el.options[x].value == val){
+        el.selectedIndex = x;
+        break;
+      }
+    }
+  }
+}
+</script>
+<script language="JScript" for="window" event="onload">
+  for ( elem in window.dialogArguments )
+  {
+    switch( elem )
+    {
+    case "href":
+      url.value = window.dialogArguments["href"];
+      break;
+    case "protocol":
+      setSelection(type,window.dialogArguments["protocol"]);
+    case "target":
+      setSelection(target,window.dialogArguments["target"]);
+      break;  
+    }
+  }
+</script>
+<script language="JScript" for="type" event="onchange">
+  url.value = this.options[this.selectedIndex].value;
+</script>
+<script language="JScript" for="OK" event="onclick">
+  var arr = new Array();
+  arr["url"] = url.value;
+  arr["target"] = target.value;
+  window.returnValue = arr;
+  window.close();
+</script>
+</head>
+<body scroll="no">
+<table>
+<tr><td width="1">
+<fieldset title="Hyperlink Information"><legend>Hyperlink Information</legend>
+<table>
+<tr>
+  <td class="text">Type:</td>
+  <td class="inputs"><select name="type"><option value="http://">http:</option><option value="https://">https:</option><option value="mailto:">mailto:</option><option value="ftp://">ftp:</option><option value="news:">news:</option><option value="telnet://">telnet:</option></select></td>  
+</tr>
+<tr>
+  <td class="text">URL:</td>
+  <td class="inputs"><input name="url" type="text" size="35" maxlength="255" value="http://"></td>  
+</tr>
+<tr>
+  <td class="text">Target:</td>
+  <td class="inputs"><select name="target"><option></option><option value="_blank">_blank</option><option value="_parent">_parent</option><option value="_self">_self</option><option value="_top">_top</option></select></td>  
+</tr>
+</table>
+</fieldset>
+</td>
+<td>
+<table>
+<tr><td><input id="OK" class="button" type="button" value="     OK     "></td></tr>
+<tr><td><input class="button" type="button" value="  Cancel  " onclick="window.close();"></td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

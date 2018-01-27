@@ -1,0 +1,32 @@
+
+<FORM METHOD="POST" ACTION="/admin/?topic=faq">
+
+
+
+<div><b>Вопрос:</b></div>
+<TEXTAREA NAME="vopros" ROWS="4" COLS="60">{vopros}</TEXTAREA>
+<br><br>
+<div><b>Ответ:</b></div>
+<TEXTAREA NAME="otvet" ROWS="7" COLS="60">{otvet}</TEXTAREA><br>
+<INPUT TYPE="hidden" NAME="edit_faq" value="{edit_faq}">
+<br>
+<INPUT TYPE="text" NAME="numsort" size=5 value="{sort}"> - Позиция
+<br><br><INPUT TYPE="submit" value="Добавить">
+
+</FORM>
+<FORM METHOD=POST ACTION="/admin/?topic=faq">
+
+
+ <table  border="1" cellpadding="3" cellspacing="1" class="text">
+  <tr bgcolor="#9B9B9B">
+     <td align="center"><strong style="color: #ffffff;">Вопросы:</strong></td>
+	 <td align="center"><strong style="color: #ffffff;">Сорт:</strong></td>
+	 <td align="center"><strong style="color: #ffffff;"></strong></td>
+	 <td align="center"><strong style="color: #ffffff;"></strong></td>
+  </tr>
+
+ {cycle}
+
+ </table>
+ <br><INPUT TYPE="submit" value="Сохранить">
+</FORM>

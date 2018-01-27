@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Файл менеджер</h1>
+<form action="/admin/?topic=file_m" method="POST" >
+
+<div>Код видео:</div>
+<TEXTAREA NAME="videocode" ROWS="5" COLS="55"></TEXTAREA>
+<br><br>
+<div>Описание видео:</div>
+<TEXTAREA NAME="videodesc" ROWS="5" COLS="55"></TEXTAREA>
+<br><br>
+<input type="submit" value="Загрузить">
+
+      
+
+	  
+		  
+		 </td>
+         </tr>
+        </table>	
+	  </form>
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=thaivideo" name="EditForm"><br>
+<h2>Список загруженных видеороликов</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+    <td class="catalogTit"><div class="catalogTitFont">Описание видео:</div></td>
+	 <td class="catalogTit"><div class="catalogTitFont">Код видео:</div></td> 
+	  <td class="catalogTit">&nbsp;</td> 
+	<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>
+	<td class="catalogTit"><div class="catalogTitFont"><font color="red">Уд.</font></div></td>
+	
+  </tr>

@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+<script>
+
+function Post()
+{
+document.myform.cat_desc.value = newTextArea.document.body.innerHTML;
+myform.submit();
+}
+
+function EditorExecCommand( command_param )
+{
+var tr = frames.newTextArea.document.selection.createRange();
+tr.select();
+tr.execCommand( command_param );
+frames.newTextArea1.focus(); 
+}
+
+function Fonts ( command_param, value )
+{
+var tr = frames.newTextArea.document.selection.createRange();
+tr.select();
+tr.execCommand( command_param,false, value );
+frames.newTextArea.focus(); 
+}
+
+function AddLink()
+{
+var tr = frames.newTextArea.document.selection.createRange();
+     document.execCommand("CreateLink");  
+}
+</script>
+</head>
+<body style="margin-top: 2px;">
+<table width="100%"  border="0" cellpadding="1" cellspacing="0" bgcolor="#0679BA">
+  <tr>
+    <td width="100%"><div class="logo" style="margin-left: 2px;">Редактирование "{name}"</div></td>
+    <td width="1" align="right"><input name="button" type="button" onClick="window.close()" value="Закрыть окно"></td>
+  </tr>
+</table>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+	  <FORM METHOD="POST" name="myform" enctype="multipart/form-data" ACTION="/admin/moduls/catalog.php?id={id}">
+	  <INPUT TYPE="hidden" name="make_desc" value="1">
+	  <INPUT TYPE="hidden" name="upd_rec" value="{upd_rec}">
+	<br>
+<div style="margin-top: 4px;">Заголовок</div>
+		      <INPUT TYPE="text" NAME="cat_title" value="{cat_title}" size="90" class="box2">
+			  <!--<div style="margin-top: 4px;">Номер</div>
+              <INPUT TYPE="text" NAME="cat_number" value="{cat_number}" size="45" class="box2">-->
+          <div style="margin-top: 4px;">Цена&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Номер</div>
+              <INPUT TYPE="text" NAME="cat_price" value="{cat_price}" size="45" class="box2">&nbsp;&nbsp;&nbsp;<INPUT TYPE="text" NAME="cat_number" value="{cat_number}" size="39" class="box2">
+<br><br>
+<div>
+<TEXTAREA NAME="cat_desc" ROWS="5" COLS="35" style="display:none">{cat_desc}</TEXTAREA>
+<div style="margin-top: 10px;">Описание</div>
+
+<select id="FontSize" name="Size" onchange="Fonts('FontSize',this.options[this.selectedIndex].value);">
+<option>Шрифт</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option>
+    </select>
+
+<a href=javascript: onClick="EditorExecCommand( 'Bold' );"><img src="/admin/images/bold.gif" alt="Жирным" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'Italic' );"><img src="/admin/images/italic.gif" alt="Наклонным" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'Underline' );"><img src="/admin/images/under.gif" alt="Подчеркнутым" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'CreateLink' );"><img src="/admin/images/link.gif" alt="Ссылкой" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'JustifyLeft' );"><img src="/admin/images/left.gif" alt="Удалить" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'JustifyCenter' );"><img src="/admin/images/center.gif" alt="Удалить" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'JustifyRight' );"><img src="/admin/images/right.gif" alt="Удалить" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'InsertOrderedList' );"><img src="/admin/images/numlist.gif" alt="Удалить" width="23" height="22" hspace="4" border="0"></a>
+
+<a href=javascript: onClick="EditorExecCommand( 'InsertUnorderedList' );"><img src="/admin/images/bullist.gif" alt="Удалить" width="23" height="22" hspace="4" border="0"></a>
+
+
+<div style="margin-top: 4px;">
+<iframe width="48%" height="140px" id="newTextArea" name="newTextArea" style="border: 1px solid #CCCCCC; background-color: #F7F7F7;"></iframe>
+</div>
+
+<script>
+newTextArea.document.designMode = "on";
+newTextArea.document.open();
+newTextArea.document.writeln(document.myform.cat_desc.value);
+newTextArea.document.close();
+</script>
+</div>
+<table border="0" width="70%">
+  <tr>
+    <td width="60%" valign="bottom"><div style="margin-top: 10px;">Фотография</div>
+<INPUT TYPE="file" NAME="dfile" size=25></td>
+  </tr>
+</table>
+<br>
+<INPUT TYPE="checkbox" NAME="publ" {publ_check}> - Статус публикации
+<br><br>
+<input type="button" value="Добавить/сохранить" onClick="Post();">
+<br>
+</FORM>
+<FORM METHOD="POST" ACTION="/admin/moduls/catalog.php?id={id}">
+<INPUT TYPE="hidden" value="1" NAME="change">
+<h2>Список объектов данного каталога</h2>
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+<tr>
+<td class="catalogTit"><div class="catalogTitFont">Фото</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Заголовок</div></td>
+<!--<td class="catalogTit"><div class="catalogTitFont">Описание</div></td>-->
+<td class="catalogTit"><div class="catalogTitFont">Дата</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Скр</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Вх</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Низ</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Ред.</div></td>
+<td class="catalogTit"><div class="catalogTitFont"><font color="red">Удал.</font></div></td>
+</tr>

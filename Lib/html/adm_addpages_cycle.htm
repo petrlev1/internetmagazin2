@@ -1,0 +1,14 @@
+<tr align="center">
+    <td height="1" colspan="15" class="catalogVLineColor"><img src="/img/space.gif" width="1" height="1"></td>
+    </tr>
+<tr bgcolor="">
+<td><a href="/admin/?topic={topic}">{pages_name}</a></td>
+<td><div class="catalogTextFont">&nbsp;&nbsp;{link}</div></td>
+<td><div class="catalogTextFont">&nbsp;&nbsp;{date}</div></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="visible[]" value="{id}" {check}></div></td>
+<td><div class="catalogTextFont"><a href="/admin/?topic=addpages{stataction}&rec_up={sort}&curr_id={id}"><img src="/admin/images/ArrowUp_2.gif" border="0"></a></div></td>
+<td><div class="catalogTextFont"><a href="/admin/?topic=addpages{stataction}&rec_dw={sort}&curr_id={id}"><img src="/admin/images/ArrowDown_2.gif" border="0"></a></div></td>
+<td><a href="/admin/?topic=addpages{stataction}&id={id}"><img src="/admin/images/correct.gif" alt="Редактировать" border="0"></a></td>
+<td><a href="#" onclick="if (!confirm('Удалить подстраницу ?')) return false; else location.href='/admin/?topic=addpages{stataction}&del_cat={id}';"><img src="/admin/images/del.gif" alt="Удалить" border="0"></a></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="del_cats[]" value="{id}"></div></td>
+</tr>

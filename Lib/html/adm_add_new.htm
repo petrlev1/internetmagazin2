@@ -1,0 +1,159 @@
+<tr>
+  <td>
+<FORM name="AddNewsForm" METHOD="POST" ACTION="/admin/?topic=add_new"  ENCTYPE="multipart/form-data">
+<input type="hidden" name="upd_rec" value="{id}">
+
+<div style="margin-top: 10px;"><strong>Мета тэги</strong></div><br>
+
+<div style="margin-top: 10px;">Заголовок</div>
+<input type="text" name="news_title" value="{news_title}" size="127" class="box2">
+<div style="margin-top: 10px;">Ключевые слова</div>
+<input type="text" name="news_keywords" value="{news_keywords}" size="127" class="box2">
+<div style="margin-top: 10px;">Описания</div>
+<input type="text" name="news_description" value="{news_description}" size="127" class="box2">
+
+<div style="margin-top: 10px;"><strong>Поля страницы</strong></div><br>
+
+Дата/время - <input type="text" name="news_date" value="{news_date}" size="17" class="box2">&nbsp;&nbsp;&nbsp;
+Источник - <input type="text" name="news_source" value="{news_source}" size="25%" class="box2">&nbsp;&nbsp;&nbsp;Фото - <input name="dfile" type="file" style="width: 190px;" class="box">
+<div style="margin-top: 10px;">Краткое описание </div>
+<TEXTAREA NAME="news_small_desc" ROWS="3" COLS="80" class="box2">{news_small_desc}</TEXTAREA>
+
+<br>
+Статус публикации - <INPUT TYPE="checkbox" NAME="news_publ" {check} class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оператор - <INPUT TYPE="text" NAME="news_operator" value="{news_operator}" class="box2" size="80%">
+<br><br>Полный текст
+
+<script language="JScript" for="window" event="onload">
+
+wysiwyg.document.writeln(document.AddNewsForm.MainFrame.value);
+wysiwyg.document.write("<html><body id=\"ezedit\" style=\"behavior:url(includes/ezedit.htc);\"></body></html>");
+wysiwyg.document.close();
+wysiwyg.document.designMode="On";
+
+</script> 
+
+<!--
+<div style="margin-top: 10px;">Ссылка заголовка</div>
+<input type="text" name="MainNewsTitle" size="127" class="box2" value="{MainNewsTitle}">
+-->
+
+
+
+<TEXTAREA NAME="MainFrame" style="display: none">{MainFrame}</TEXTAREA>
+
+<div style="margin-top: 10px;"><!--Тело новости--></div>
+<div id="ezContainer" oncontextmenu="event.returnValue = false;" onselectstart="return false;" ondragstart="return false">
+ 
+<table id="toolBar" class="toolBar" cellspacing="0">
+	<tr>
+
+	   <td id="ezNewHTML" class="button" onclick="ezedit.newHTML();" title="Новый" nowrap icon="images/newdoc.gif" iconWidth="23" iconHeight="22"></td>  
+<!--
+	    <td id="ezOpen" class="button"  onclick="window.open('includes/open.php','','dependent=1,Height=130,Width=430')" title="Open File" nowrap icon="images/open.gif" iconWidth="23" iconHeight="22"></td>
+	-->    
+		<td id="quotation" class="button"  onclick="SaveFrame();" title="Сохранить" nowrap icon="images/save.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="handle"></span></td>      
+		
+		<td id="ezCut" class="button" disable="1" onclick="ezedit.doFormat('Cut');" title="Вырезать" nowrap icon="images/cut.gif" iconWidth="23" iconHeight="22"></td>  
+		
+		<td id="ezCopy" class="button" disable="1" onclick="ezedit.doFormat('Copy');" title="Копировать" nowrap icon="images/copy.gif" iconWidth="23" iconHeight="22"></td>  
+		
+		<td id="ezPaste" class="button" onclick="ezedit.doFormat('Paste');" title="Вставить" nowrap icon="images/paste.gif" iconWidth="23" iconHeight="22"></td>  
+		
+		<td id="ezDelete" class="button" onclick="ezedit.doFormat('Delete');" title="Удалить" nowrap icon="images/delete.gif" iconWidth="23" iconHeight="22"></td> 
+		<td id="ezCtrlImage" class="button" onclick="window.open('includes/uploadimage.php','','dependent=1,Height=250,Width=420')" title="Изображение" nowrap icon="images/image.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="separator"></span></td>       
+		<td><span class="handle"></span></td>         
+		<td id="ezCtrlBold" class="button" type="switch" onclick="ezedit.doFormat('Bold');" title="Жирный" nowrap icon="images/bold.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlItalic" class="button" type="switch" onclick="ezedit.doFormat('Italic');" title="Курсив" nowrap icon="images/italic.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlUnderline" class="button" type="switch" onclick="ezedit.doFormat('Underline');" title="Подчеркнутый" nowrap icon="images/under.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlSuper" class="button" type="switch" onclick="ezedit.doFormat('SuperScript');" title="Верхний индекс" nowrap icon="images/superscript.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlSub" class="button" type="switch" onclick="ezedit.doFormat('SubScript');" title="Нижний индекс" nowrap icon="images/subscript.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="separator"></span></td>    
+		<td><span class="handle"></span></td>
+		<td id="ezCtrlJustifyLeft" class="button" type="switch" onclick="ezedit.doFormat('JustifyLeft');" title="По левому краю" nowrap icon="images/left.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlJustifyCenter" class="button" type="switch" onclick="ezedit.doFormat('JustifyCenter');" title="По центру" nowrap icon="images/center.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlJustifyRight" class="button" type="switch" onclick="ezedit.doFormat('JustifyRight');" title="По правому краю" nowrap icon="images/right.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="separator"></span></td>    
+		<td id="ezCtrlOrderedList" class="button" type="switch" onclick="ezedit.doFormat('InsertOrderedList');" title="Нумерация" nowrap icon="images/numlist.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlUnorderedList" class="button" type="switch" onclick="ezedit.doFormat('InsertUnorderedList');" title="Маркеры" nowrap icon="images/bullist.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlOutdent" class="button" onclick="ezedit.doFormat('Outdent');" title="Уменьшить отступ" nowrap icon="images/deindent.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlIndent" class="button" onclick="ezedit.doFormat('Indent');" title="Увеличить отступ" nowrap icon="images/inindent.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="separator"></span></td>    
+		<!------
+        <td id="ezCtrlBold" class="button" type="switch" onclick="ezedit.quot();" title="Bold" nowrap icon="images/bold.gif" iconWidth="23" iconHeight="22"></td>---->
+
+		
+       </tr>
+</table>
+<table id="toolBar" class="toolBar" cellspacing="0">
+	<tr>
+		<td><span class="handle"></span></td>       
+    <td title="Format"> 
+    <select id="ezCtrlFormatBlock" name="Style" onchange="ezedit.blockFormat('FormatBlock',this.options[this.selectedIndex].value);">
+        <option value="none">Normal</option><option value="h1">Heading 1</option><option value="h2">Heading 2</option><option value="h3">Heading 3</option><option value="h4">Heading 4</option><option value="h5">Heading 5</option><option value="h6">Heading 6</option><option value="pre">Formatted</option>    
+    </select>
+    </td>
+    <td title="Font">
+    <select id="ezCtrlFontName" name="Font" onchange="ezedit.doFormat('FontName',this.options[this.selectedIndex].value);">
+      <option value="Arial">Arial</option><option value="courier">Courier</option><option value="Times New Roman">Times</option><option value="Verdana">Verdana</option><option value="Wingdings">Wingdings</option>      
+    </select>
+     </td>
+    <td title="Font Size">     
+    <select id="ezCtrlFontSize" name="Size" onchange="ezedit.doFormat('FontSize',this.options[this.selectedIndex].value);">
+      <option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option>
+    </select>
+    </td>
+    <td style="width:0px;"><object class="colorPalette" id="palette" type="text/x-scriptlet" data="colorpalette.htm"></object></td>
+    <script type="text/javascript" for="palette" event="onscriptletevent(action, color)">switch(action) {case "colorchange": ezedit.toggleColorPicker();document.getElementById("ezCtrlColorPicker").pressed = false;ezedit.doFormat("ForeColor",color)}</script>
+		<td id="ezCtrlColorPicker" type="switch" class="button" onclick="ezedit.toggleColorPicker();" title="Цвет шрифта" nowrap icon="images/fgcolor.gif" iconWidth="23" iconHeight="22"></td>
+		<td><span class="separator"></span></td>
+		<td><span class="handle"></span></td>         
+		<td id="ezInsLink" class="button" disable="1" onclick="ezedit.insertLink();" title="Добавить ссылку" nowrap icon="images/link.gif" iconWidth="23" iconHeight="22"></td>    
+		<td id="ezRemLink" class="button" disable="1" onclick="ezedit.doFormat('Unlink');" title="Убрать ссылку" nowrap icon="images/unlink.gif" iconWidth="23" iconHeight="22"></td>    
+		<td><span class="separator"></span></td>          
+		<td id="ezCtrlHR" class="button" onclick="ezedit.doFormat('InsertHorizontalRule');" title="Горизонтальная линия" nowrap icon="images/hr.gif" iconWidth="16" iconHeight="16"></td>
+		<td><span class="separator"></span></td>
+		<td><span class="handle"></span></td>               
+		<td id="ezCtrlInsTable" class="button" onclick="ezedit.insertTable();" title="Нарисовать таблицу" nowrap icon="images/instable.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezCtrlBorderToggle" class="button" type="switch" onclick="ezedit.BordersVisible = !ezedit.BordersVisible;" title="Видимые границы" nowrap icon="images/borders.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblInsRow" class="button" disable="1" onclick="ezedit.insertRow();" title="Вставить ряд" nowrap icon="images/insrow.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblDelRow" class="button" disable="1" onclick="ezedit.deleteRow();" title="Удалить ряд" nowrap icon="images/delrow.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblInsColumn" class="button" disable="1" onclick="ezedit.insertColumn();" title="Вставить столбец" nowrap icon="images/inscol.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblDelColumn" class="button" disable="1" onclick="ezedit.deleteColumn();" title="Удалить столбец" nowrap icon="images/delcol.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblInsCell" class="button" disable="1" onclick="ezedit.insertCell();" title="Вставить ячейку" nowrap icon="images/inscell.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblSplCell" class="button" disable="1" onclick="ezedit.splitCell();" title="Разбить ячейку" nowrap icon="images/splitcell.gif" iconWidth="23" iconHeight="22"></td>
+		<td id="ezTblDelCell" display="Delete Cell" class="button" disable="1" onclick="ezedit.deleteCell();" title="Удалить ячейку" nowrap icon="images/delcell.gif" iconWidth="23" iconHeight="22"></td>
+                
+  <tr>    
+</table>
+
+<DIV id="Frm"><iframe id="wysiwyg" name="wysiwyg" width="100%" height="100%"></iframe></DIV>
+
+<!--- write the footer elements of ezEdit --->
+
+<table cellspacing="0" style="width:100%;border:0;padding:0;margin-top:2px;height:20px;">
+<tr>
+<td style="width:18px;" title="Edit Source" nowrap><span class="button" type="switch" onclick="ezedit.WYSIWYGMode = !ezedit.WYSIWYGMode;" icon="images/viewsource.gif" iconWidth="17" iconHeight="17"></span></td>
+<td class="statusDisplay"><span id="ezeditStatus">&nbsp;</span></td>
+<td width="1px"></td>
+</tr>
+</table>
+<!--- end footer elements --->
+</div>
+
+
+<br>
+
+</td></tr>
+
+
+<tr><td>
+<!--<INPUT TYPE="submit" value="Сохранить">-->
+
+<INPUT TYPE="button" value="Сохранить" onClick="SaveFrame();">
+
+</FORM>
+
+  </td>
+</tr>

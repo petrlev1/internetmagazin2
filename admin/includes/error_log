@@ -1,0 +1,6 @@
+[18-Dec-2004 14:40:04] PHP Warning:  main(../../libs/html.class.inc): failed to open stream: No such file or directory in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 10
+[18-Dec-2004 14:40:04] PHP Warning:  main(): Failed opening '../../libs/html.class.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 10
+[18-Dec-2004 14:40:04] PHP Fatal error:  Call to a member function on a non-object in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 12
+[19-Dec-2004 20:39:18] PHP Warning:  main(../../libs/html.class.inc): failed to open stream: No such file or directory in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 10
+[19-Dec-2004 20:39:18] PHP Warning:  main(): Failed opening '../../libs/html.class.inc' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 10
+[19-Dec-2004 20:39:18] PHP Fatal error:  Call to a member function on a non-object in /home/persona5/public_html/uborka/admin/includes/uploadimage.php on line 12

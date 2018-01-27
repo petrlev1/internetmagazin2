@@ -1,0 +1,121 @@
+<!-- ezEdit
+ 
+  file:recordset.htc
+  copyright:2000 SiteObjects, Inc.
+  author:Brett Suwyn
+  mailto:ezTools@siteobjects.com
+  http://www.siteobjects.com/
+  
+  version: 
+  date: 8/13/2000
+  
+  notes:
+  
+ -->
+<public:component>
+
+<public:attach event="oncontentready" onevent="init()"/>
+
+<public:method name="addSelection" />
+<public:method name="removeSelection" />
+<public:method name="sort" />
+
+<public:property name="selected" value="" />
+<public:property name="currentSort" />
+<public:property name="allowMultiple" value="1" />
+
+<script>
+function sort(column,dt){
+  event.srcElement.appendChild(sortArrow);       
+  switch (dt) {
+    case "number":
+      column = "number("+ column + ")";    
+    break;
+    case "date":
+      column = "date(" + column + ")";     
+    break;
+  }
+   var currSort = xslSort.documentElement.selectSingleNode("xsl:for-each/@order-by").text;
+    if (currSort.indexOf("+") != -1){
+      sortArrow.src = "images/sort_desc.gif";
+      xslSort.documentElement.selectSingleNode("xsl:for-each/@order-by").text = "- type; - " + column;
+    }else{
+      sortArrow.src = "images/sort_asc.gif";
+      xslSort.documentElement.selectSingleNode("xsl:for-each/@order-by").text = "+ type; + " + column;
+    }
+
+  xmlFileListing.documentElement.transformNodeToObject(xslSort.XMLDocument,xmlFileListing.XMLDocument);
+
+}
+function removeSelection(el){
+    if (event.ctrlKey){
+      if(!selected.length){
+        selected = null;        
+      }else{
+        selected = delFromArray(selected,el);
+      }
+    }else{
+        if(!selected.length){    
+          selected = null;    
+        }else{
+          selected = delFromArray(selected,el);
+        }
+    }
+}
+
+function addSelection(el){
+  if (selected != null){
+    if (allowMultiple && event.ctrlKey){
+      if(!selected.length){
+        var elTemp = selected;
+        selected = new Array();
+        selected[0] = elTemp;
+        selected[1] = el;
+      }else{
+        dFileListing.selected[dFileListing.selected.length] = el;
+      }
+    }else{
+        if(!dFileListing.selected.length){    
+          dFileListing.selected.isSelected = false;
+        }else{
+          var arrayTemp = selected;
+          for(var x=0;x<arrayTemp.length;x++){
+            arrayTemp[x].isSelected = false;
+          }
+        }
+        selected = el;
+    }  
+  }else
+    selected = el;  
+}
+
+function propChange() {
+  switch (event.propertyName) {
+    case "selected":
+      if (selected != null)
+        changeSelected();
+      break;
+  } 
+}
+function delFromArray(arry,key){
+  var tempArray = new Array();
+  for (var x=0;x<arry.length;x++){            
+    if (arry[x] != key){
+      tempArray[tempArray.length] = arry[x];
+    }
+  }
+  return tempArray;
+}
+
+function getBooleanValue(b){
+  return (b.toLowerCase == "true" || b == "1");
+}
+
+function init(){
+  allowMultiple = getBooleanValue(allowMultiple);
+  selected = null;
+  
+}
+</script>
+
+</public:component>

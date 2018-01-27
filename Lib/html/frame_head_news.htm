@@ -1,0 +1,40 @@
+<form method="POST" name="sqlform"><textarea name="sqldates" id="sqldates">{MainFrame}</TEXTAREA></form>
+   <script>
+
+document.sqlform.style.display="none";
+
+    function submitForm()
+	    {
+		    document.AddNewsForm.MainFrame.value = oEdit1.getHTMLBody();
+			AddNewsForm.submit();
+		}
+
+//INSERT CUSTOM CONTENT
+</script>
+{message}
+
+<FORM name="AddNewsForm" METHOD="POST" ACTION="/admin/?topic=add_new"  ENCTYPE="multipart/form-data">
+
+<input type="hidden" name="upd_rec" value="{id}">
+
+<div style="margin-top: 10px;"><strong>Мета тэги</strong></div><br>
+
+<div style="margin-top: 10px;">Заголовок</div>
+<input type="text" name="news_title" value="{news_title}" size="127" class="box2">
+<div style="margin-top: 10px;">Ключевые слова</div>
+<input type="text" name="news_keywords" value="{news_keywords}" size="127" class="box2">
+<div style="margin-top: 10px;">Описания</div>
+<input type="text" name="news_description" value="{news_description}" size="127" class="box2">
+
+<div style="margin-top: 10px;"><strong>Поля страницы</strong></div><br>
+
+Дата/время - <input type="text" name="news_date" value="{news_date}" size="17" class="box2">&nbsp;&nbsp;&nbsp;
+Источник - <input type="text" name="news_source" value="{news_source}" size="25%" class="box2">&nbsp;&nbsp;&nbsp;Фото - <input name="dfile" type="file" style="width: 190px;" class="box">
+<div style="margin-top: 10px;">Краткое описание </div>
+<TEXTAREA NAME="news_small_desc" ROWS="3" COLS="80" class="box2">{news_small_desc}</TEXTAREA>
+
+<br>
+Статус публикации - <INPUT TYPE="checkbox" NAME="news_publ" {check} class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оператор - <INPUT TYPE="text" NAME="news_operator" value="{news_operator}" class="box2" size="80%">
+<TEXTAREA NAME="MainFrame" style="display: none">{MainFrame}</TEXTAREA>
+<br><br>Полный текст
+</FORM>

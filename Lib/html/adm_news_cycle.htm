@@ -1,0 +1,14 @@
+<tr align="center">
+    <td height="1" colspan="15" class="catalogVLineColor"><img src="/img/space.gif" width="1" height="1"></td>
+    </tr>
+<tr bgcolor="">
+<td><div class="catalogTextFont">{news_title}</div></td>
+<td><div class="catalogTextFont">&nbsp;{date}</div></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="visible[]" value="{id}" {check}></div></td>
+<td><div class="catalogTextFont"><a href="/admin/?topic={topic}&c_id={c_id_d}&na={na_d}&r_id={r_id_d}&na2={na2_d}&level={level}"><img src="/admin/images/ArrowUp_2.gif" border="0"></a></div></td>
+<td><div class="catalogTextFont"><a href="/admin/?topic={topic}&c_id={c_id}&na={na}&r_id={r_id}&na2={na2}&level={level}"><img src="/admin/images/ArrowDown_2.gif" border="0"></a></div></td>
+
+<td><a href="/admin/?topic=add_new&id={id}"><img src="/admin/images/correct.gif" alt="Редактировать" border="0"></a></td>
+<td><a href="#" onclick="if (!confirm('Удалить страницу ?')) return false; else location.href='/admin/?topic={topic}&del_cat={id}';"><img src="/admin/images/del.gif" alt="Удалить" border="0"></a></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="del_cats[]" value="{id}"></div></td>
+</tr>

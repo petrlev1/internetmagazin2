@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<title>Система управления - каталог</title>
+	<link rel="stylesheet" type="text/css" href="admin.css">
+	<meta content="text/html; charset=windows-1251" http-equiv=Content-Type>
+	
+<script language="JavaScript">
+
+ function check_form (form)
+ {
+  if (form.admin_login.value == '')
+  {
+   alert ('Введите логин');
+   return false;
+  }
+  
+  if (form.admin_password.value == '')
+  {
+   alert ('Введите пароль');
+   return false;
+  }
+  
+  return true;
+ }
+
+</script>	
+	
+</head>
+
+<body>
+<div align="right"><font size="1">Levbrothers SE v 5.12</font></div> 
+<table width="100%" height="100%">
+
+<tr>
+	<td align="center" valign="middle">
+	
+
+	<table width="200" height="100">
+	 
+	 <form action="index.php" name="form" method="POST" onSubmit="return check_form(this);">
+	 
+	 
+	  <tr>
+	   <td><b>Каталог</b> - авторизация<br><br></td>
+	  </tr>
+	  
+	  
+	   
+	  
+	  <tr>
+	   <td>Логин</td>
+	  </tr>
+	  <tr>
+	   <td>
+	    <input type="text" name="admin_login" style="width:100%">
+	   </td>
+	  </tr>
+	  <tr>
+	   <td>Пароль</td>
+	  </tr>
+	  <tr>
+	   <td>
+	    <input type="password" name="admin_password" style="width:100%">
+	   </td>
+	  </tr>
+	  <tr>
+	   <td>
+	    <br>
+		<input type="submit" value="Вход" id="btn">
+	   </td>
+	  </tr>
+	  
+ 
+ 
+	  
+	  </form>
+	  
+	  	
+	</table>
+	
+	
+	</td>
+</tr>
+ 
+</table>
+
+</body>
+</html>

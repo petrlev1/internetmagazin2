@@ -1,0 +1,21 @@
+<tr align="center">
+    <td height="1" colspan="15" class="catalogVLineColor"><img src="/img/space.gif" width="1" height="1"></td>
+    </tr>
+<tr>
+<td align=center>{foto}</td>
+<td><div class="catalogTextFont">{cat_title}</div></td>
+<!--<td><div class="catalogTextFont">{small_desc}</div></td>-->
+<td><div class="catalogTextFont">{curr_date}</div></td>
+<td><INPUT TYPE="checkbox" NAME="visible[]" value="{id}" {check}></td>
+
+<td><a href="/admin/moduls/catalog.php?id={cat}&rec_up={sort_recs}&curr_id={id}"><img src="/admin/images/ArrowUp_2.gif" border="0" alt="Наверх"></a></td>
+<td><a href="/admin/moduls/catalog.php?id={cat}&rec_dw={sort_recs}&curr_id={id}"><img src="/admin/images/ArrowDown_2.gif" border="0" alt="Вниз"></a></td> 
+
+<!--
+<td><INPUT TYPE="hidden" NAME="thid[]" value="{id}">&nbsp;<INPUT TYPE="text" NAME="sortgoods[]" size=2 value="{sortgoods}">&nbsp;</td>
+
+<td><INPUT TYPE="hidden" NAME="thid2[]" value="{id}">&nbsp;<INPUT TYPE="text" NAME="gprices[]" size=5 value="{gprices}">&nbsp;</td>-->
+<td><a href="/admin/moduls/catalog.php?id={cat}&upd_rec={id}">Ред.</a></td>
+<td>&nbsp;<a href="/admin/moduls/gallery.php?id={cat}&upd_rec={id}" target=_blank>Фот.</a></td>
+<td><INPUT TYPE="checkbox" NAME="del_cats[]" value="{id}"></td>
+</tr>

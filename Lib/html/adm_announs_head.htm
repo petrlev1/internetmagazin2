@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Анонсы главной</h1>
+ <font color=red>{error}</font><br><br>
+<div>Выбор товара:</div>
+<SELECT NAME="announs" onChange=" if (this.value!='') location.href='/admin/?topic=announs&id=' + this.value;">
+<option value=""></option>
+{goodslist}
+</SELECT>		  
+		 </td>
+         </tr>
+        </table>	
+
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=file_m" name="EditForm"><br>
+<h2>Установленные товары</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+    <td class="catalogTit"><div class="catalogTitFont">Товар:</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>
+	
+  </tr>

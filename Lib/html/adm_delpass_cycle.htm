@@ -1,0 +1,12 @@
+<tr align="center">
+    <td height="1" colspan="15" class="catalogVLineColor"><img src="/img/space.gif" width="1" height="1"></td>
+    </tr>
+<tr bgcolor="">
+<td><div class="catalogTextFont">{status}</div></td>
+<td><div class="catalogTextFont">{login}</div></td>
+
+
+
+<td><a href="#" onclick="if (!confirm('Удалить администратора?')) return false; else location.href='/admin/?topic=del_pass&del_admin={id}';"><img src="/admin/images/del.gif" alt="Удалить" border="0"></a></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="del_admins[]" value="{id}"></div></td>
+</tr>

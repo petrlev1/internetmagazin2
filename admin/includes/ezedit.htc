@@ -1,0 +1,536 @@
+<public:componet>
+<public:attach event="oncontentready" onevent="init();"/>
+<public:attach event="onmouseup" onevent="setStatus();"/>
+<public:attach event="onselect" onevent="selectionChanged();"/>
+<public:attach event="onselectionchange" onevent="setStatus();"/>
+<public:attach event="onkeyup" onevent="setStatus();"/>
+<public:attach event="onblur" onevent="updateHiddenField();"/>
+<public:attach event="oncontextmenu" onevent="event.returnValue = false;"/>  
+<public:method name="save_form" internalname="my_save_form" />
+<public:method name="newHTML" internalname="ezEdit_newHTML" />
+<public:method name="saveHTML" internalname="ezEdit_saveHTML" />
+<public:method name="loadHTML" internalname="ezEdit_loadHTML" />
+<public:method name="openURL" internalname="ezEdit_openURL" />
+<public:method name="openImageManger" internalname="ezEdit_openImageManger" />  
+<public:method name="insertImage" internalname="ezEdit_insertImage" />  
+<public:method name="toggleColorPicker" internalname="ezEdit_toggleColorPicker" />
+<public:method name="insertTable" internalname="ezEdit_insertTable" />  
+<public:method name="insertRow" internalname="ezEdit_insertRow" />
+<public:method name="deleteRow" internalname="ezEdit_deleteRow" />  
+<public:method name="insertColumn" internalname="ezEdit_insertColumn" />    
+<public:method name="deleteColumn" internalname="ezEdit_deleteColumn" />      
+<public:method name="insertCell" internalname="ezEdit_insertCell" />    
+<public:method name="splitCell" internalname="ezEdit_splitCell" />      
+<public:method name="deleteCell" internalname="ezEdit_deleteCell" />        
+<public:method name="doFormat" internalname="ezEdit_doFormat" />
+
+<public:method name="blockFormat" internalname="ezEdit_blockFormat" />
+
+<public:method name="insertLink" internalname="ezEdit_insertLink" />  
+<public:method name="quot" internalname="ezEdit_quot" />  
+<public:method name="removeLink" internalname="ezEdit_removeLink" />  
+<public:method name="About" internalname="ezEdit_About" />  
+<public:property name="BordersVisible" value="0" />  
+<public:property name="WYSIWYGMode" value="1" />
+<public:property name="TableControlsDisabled" value="1" />
+<public:property name="ControlsDisabled" value="0" />
+<public:property name="elSelected" value="" />
+<public:property name="Loaded" value="0" />
+
+<script>
+var elSelected = null;
+var aToolBarStatus = new Array();
+
+/*------------------------------------------------
+          Wrapper Functions
+---------------------------------------------------*/
+function ezEdit_insertLink(){
+  var vIn = new Array();
+  var vOut = null;
+  var tr=element.document.selection.createRange();
+  var editLink = tr.queryCommandEnabled("Unlink");
+  if(editLink){ // A link exists in the selection
+    var aHREF =  tr.htmlText.match(/<a.*href=['"]*([^"' ]+)['"]*/i);
+    
+    vIn["href"] = aHREF[1];  
+    vIn["protocol"] = aHREF[1].match(/([^:]+:)/i)[1];    
+    
+  }
+  vOut = parent.showModalDialog(parent.ezFilePath+"href.htm",vIn,"dialogWidth:390px; dialogHeight:135px;help:0;status:no;");
+  if (vOut != null){
+    if(editLink) doFormat("Unlink");  
+    tr.pasteHTML("<a href=\"" + vOut.url + "\"" +  ">" + tr.text + "</a>");
+  }
+  focus();   
+}
+/*
+function ezEdit_quot(){
+ 
+  var vIn = new Array();
+  var vOut = null;
+  var tr=element.document.selection.createRange();
+  s=tr.htmlText;
+  if (s !=0) {
+  tr.pasteHTML('«' + s + '»');   
+             }
+  else                 
+  window.alert('Paste text please'); 
+        
+}*/
+function ezEdit_quot(){
+ 
+ var tr = element.document.selection.createRange();
+tr.select();
+
+tr.execCommand('RemoveFormat');
+
+element.document.focus();     
+}       
+
+
+function ezEdit_insertTable(){
+
+  if (elSelected != null && elSelected.type != "TABLE") return;
+  var vIn = new Array();
+  var vOut = null;
+  if (elSelected != null && elSelected.type == "TABLE"){
+    tableTag = elSelected.element.outerHTML.match(/<table[^>]+/i);
+    var iPadding = tableTag[0].match(/cellpadding=['"]*(\d+)['"]*/i);
+    var iSpacing = tableTag[0].match(/cellspacing=['"]*(\d+)['"]*/i);    
+    var iWidth = tableTag[0].match(/width=['"]*(\d+)['"]*/i);   
+    var iBorder = tableTag[0].match(/border=['"]*(\d+)['"]*/i);       
+    var sStyle = tableTag[0].match(/style=['"]{1}([^'"]+)['"]{1}/i);   
+    //Set edit table params
+    vIn["edit"] = 1;
+    vIn["rows"] = elSelected.element.innerHTML.match(/<tr.*>/ig).length;
+    vIn["columns"] = Math.round(elSelected.element.innerHTML.match(/<td.*>/ig).length/vIn["rows"]);
+    vIn["padding"] =(iPadding != null?iPadding[1]:0);
+    vIn["spacing"] = (iSpacing != null?iSpacing[1]:0);
+    vIn["width"] = (iWidth != null?iWidth[1]:"");
+    vIn["border"] =(iBorder != null?iBorder[1]:0);
+    vIn["style"] = (sStyle != null?sStyle[1]:"")
+  }else{
+    //Defaults for new tables
+    vIn["edit"] = 0;    
+    vIn["rows"] = 3;
+    vIn["columns"] = 3;
+    vIn["padding"] =0;
+    vIn["spacing"] = 0;
+    vIn["width"] = 100;
+    vIn["border"] = 0;    
+    vIn["style"] = "";       
+  }
+  
+  vOut = parent.showModalDialog(parent.ezFilePath+"table.htm",vIn,"dialogWidth:250px; dialogHeight:185px;help:0;status:no;");
+  if (vOut != null){
+    if (elSelected != null){
+      var editedTable = '<table cellspacing="'+vOut.spacing+'" width="'+vOut.width+'" border="'+(vOut.border?vOut.border:0)+'" cellpadding="'+vOut.padding+ '"' + 'style="'+vOut.style+'">' + elSelected.element.innerHTML + "</table>";
+      elSelected.element.outerHTML = editedTable;
+      elSelected = null;  
+    }else{
+      var tr=element.document.selection.createRange();
+      var border = vOut.border?vOut.border:0;
+      var newTable = '<table cellspacing="'+vOut.spacing+'" width="'+vOut.width+'" border="'+ border +'" cellpadding="'+vOut.padding+ '"' + 'style="' + vOut.style + '">';
+      for(var x=0;x<vOut.rows;x++){
+        var newTable = newTable+ "<tr>";
+        for(var y=0;y<vOut.columns;y++){
+          var newTable = newTable+ "<td></td>";
+        }
+        var newTable = newTable+ "</tr>";
+      }
+      var newTable = newTable+ "</table>";
+      tr.pasteHTML(newTable);
+    }
+    if (border == 0){
+      parent.document.all.ezCtrlBorderToggle.pressed = true;
+      element.BordersVisible = 1;      
+    }
+  }
+  focus(); 
+
+}
+function ezEdit_insertCell(){
+  var elTD = getCurrTD();
+  if(elTD.tagName != null){ 
+    var elTR = getCurrTR();
+    var currPos = elTD.cellIndex;
+    elTR.insertCell(currPos);
+  }
+  focus();    
+}
+function ezEdit_splitCell(){
+  var elTD = getCurrTD();
+  if(elTD.tagName != null){ 
+    var elTR = getCurrTR();
+    currPos = elTD.cellIndex;
+    elNewTD = elTR.insertCell(currPos+1); 
+    var elTable = getCurrTable();
+    for(var x=0;x<elTable.rows.length;x++){
+      if(x != elTR.rowIndex && elTable.rows[x].cells[currPos])
+        elTable.rows[x].cells[currPos].colSpan += 1;
+    }
+  }
+  focus();    
+}
+function ezEdit_deleteCell(){
+  var elTD = getCurrTD();
+  if(elTD.tagName != null){ 
+    var elTR = getCurrTR();
+    var currPos = elTD.cellIndex;
+    elTR.deleteCell(currPos);
+  }
+  focus();    
+}
+function ezEdit_insertColumn(){
+ var elTD = getCurrTD();
+ if(elTD.tagName != null){ 
+   var currPos = elTD.cellIndex;
+   var elTable = getCurrTable();
+    for (var x=0;x<elTable.rows.length;x++){
+      oTD = elTable.rows[x].insertCell(currPos);
+    }
+  }
+  focus();    
+}
+function ezEdit_deleteColumn(){
+ var elTD = getCurrTD();
+ if(elTD.tagName != null){ 
+   var currPos = elTD.cellIndex;
+   var elTable = getCurrTable();
+    for (var x=0;x<elTable.rows.length;x++){
+      elTable.rows[x].deleteCell(currPos);
+    }
+  }
+  focus();    
+}
+function ezEdit_insertRow(){
+ var elTable = getCurrTable();
+ if (elTable != null){ 
+   var elTR = getCurrTR();
+   var  newTR = elTable.insertRow(elTR.rowIndex);
+    for (var x=0;x<elTR.cells.length;x++){
+      oTD = newTR.insertCell();
+    }
+  }
+  focus();    
+}
+
+function ezEdit_deleteRow(){
+  var elTR = getCurrTR();
+  if(elTR.tagName != null){
+   var elTable = getCurrTable();
+   elTable.deleteRow(elTR.rowIndex);
+  }
+  focus();    
+}
+
+function ezEdit_doFormat(cmd,opt) {
+  if (cmd.toLowerCase() == "delete" || cmd.toLowerCase() == "cut") elSelected = null;
+  switch(cmd) {
+    case "showColorPicker":
+      toggleColorPicker();
+      break;          
+    case "ForeColor":
+    case "FormatBlock":
+      
+    case "FontName":
+    case "FontSize":
+      element.document.execCommand(cmd,false,opt);
+      break;
+    default:
+      element.document.execCommand(cmd);
+      break;
+  }
+  setCurrentStatus();
+  focus();  
+}
+
+function ezEdit_blockFormat(com,opt) {
+  var tr = element.document.selection.createRange();
+tr.select();
+
+tr.execCommand(com,false,'<' + opt +'>');
+
+element.document.focus();     
+}
+
+
+
+function ezEdit_toggleColorPicker(){
+  if(parent.document.palette.currentStyle.visibility == "hidden" ){
+    parent.document.palette.style.visibility = "visible";
+  }
+  else{
+    parent.document.palette.style.visibility = "hidden";
+  }
+  focus();  
+}
+function ezEdit_loadHTML(HTML){
+  
+  element.document.body.innerHTML = HTML;
+  focus();
+ 
+
+}
+
+function ezEdit_newHTML(){
+  element.document.body.innerHTML = "";
+  focus();    
+}
+function ezEdit_saveHTML(){
+  updateHiddenField();
+  parent.ezForm.submit(); 
+}
+/*To be used in future version
+function ezEdit_openURL(){
+ parent.document.all.wysiwyg.src = "";
+}
+*/
+function ezEdit_About() {
+  var width = 355;
+  var height = 185;
+	var w = window.screen.width;
+	var h = window.screen.height;
+	var l = (w-width)/2;
+	var t = (h-height)/2;
+	
+	wSplash = parent.open(parent.ezFilePath+"about.htm", "_about", 'fullscreen=1,toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=0,resizable=0' );
+
+	wSplash.blur();
+	window.focus();
+	
+	wSplash.resizeTo(width,height);
+	wSplash.moveTo(l, t);
+
+	wSplash.focus();
+}
+/*------------------------------------------------
+          Property Change Handlers
+---------------------------------------------------*/
+function ezEdit_PropertyChange() {
+  switch (event.propertyName) {
+    case "BordersVisible":
+      propChangeBordersVisible();
+      break;
+    case "WYSIWYGMode":
+      propChangeWYSIWYGMode();    
+      break;
+    case "ControlsDisabled":
+      toggleControls(ControlsDisabled,"ezCtrl");
+      break;
+    case "TableControlsDisabled":
+      toggleControls(TableControlsDisabled,"ezTbl");
+      break;
+  } 
+}
+
+function propChangeBordersVisible(){
+  if(element.document.styleSheets.length == 0)
+    var elementStyle = element.document.createStyleSheet();
+  if(BordersVisible){
+    element.document.styleSheets[0].addRule("TD","border : 1 solid grey;");    
+  } else{
+    element.document.styleSheets[0].addRule("TD","border : none;");
+  }
+  focus();    
+}
+
+function propChangeWYSIWYGMode() {
+  if(element.document.styleSheets.length == 0)
+    element.document.createStyleSheet();
+  if(WYSIWYGMode){
+     var sContents=element.document.body.innerText;
+     element.document.styleSheets[0].addRule("BODY","font:12pt Times New Roman;"); 
+     element.document.body.innerHTML= sContents;
+     ControlsDisabled = 0;
+ }else{
+    var sContents=element.document.body.innerHTML;
+    element.document.styleSheets[0].addRule("BODY","font:10pt courier, monospace;");    
+    element.document.body.innerText= sContents;
+    ControlsDisabled = 1;
+    TableControlsDisabled = 1;
+  }
+  focus();    
+}
+
+
+
+/*------------------------------------------------
+          Internal functions
+---------------------------------------------------*/
+function ControlStatus(command, element, bSourceMode) {
+  this.command = command;
+  this.element = element;
+  this.allowInSourceMode = bSourceMode;
+}
+ 
+function setCurrentStatus(){
+  for (var x=0;x< aToolBarStatus.length; x++){
+    if (WYSIWYGMode || (!WYSIWYGMode && aToolBarStatus[x].allowInSourceMode)){
+      enabled = element.document.queryCommandEnabled(aToolBarStatus[x].command);
+      if(enabled == aToolBarStatus[x].element.disable){
+        aToolBarStatus[x].element.disable = !enabled;
+      }
+      if(aToolBarStatus[x].element.type == "switch"){
+        pressed = element.document.queryCommandState(aToolBarStatus[x].command);
+        if(pressed != aToolBarStatus[x].element.pressed){
+          aToolBarStatus[x].element.pressed = pressed;
+        }    
+      }
+    }
+  }
+ 
+
+}
+
+function setSelection(el,val){
+  if (el.options[el.selectedIndex] != val){
+    for(var x=0;x<el.options.length;x++){
+      if (el.options[x].value == val){
+        el.selectedIndex = x;
+        break;
+      }
+    }
+  }
+}
+
+function getBooleanValue(b){
+  return (eval(b) == "true" || eval(b) == "1");
+}
+
+function getCurrTable(){
+   if (element.document.selection.type == "Control") return null;
+   var oTable = element.document.selection.createRange().parentElement();
+   while ((oTable.tagName != "TABLE" && oTable.tagName != "BODY")){
+      oTable = oTable.parentElement;
+   }
+   if (oTable.tagName == "BODY")
+    oTable = null;
+
+   return oTable;
+}
+
+function getCurrTR(){
+   if (element.document.selection.type == "Control") return null;
+   var oTR = element.document.selection.createRange().parentElement();
+   while ((oTR.tagName != "TR" && oTR.tagName != "BODY")){
+      oTR = oTR.parentElement;
+   }
+   if (oTR.tagName == "BODY")
+    oTR = null;
+
+   return oTR;
+}
+
+function getCurrTD(){
+   if (element.document.selection.type == "Control") return null;
+   var oTD = element.document.selection.createRange().parentElement();
+   while ((oTD.tagName != "TD" && oTD.tagName != "BODY")){
+      oTD = oTD.parentElement;
+   }
+   if (oTD.tagName == "BODY")
+    oTD = null;
+
+   return oTD;
+}
+
+function toggleControls(bState,sFilter){
+  if (sFilter == "ezCtrl"){
+    parent.document.all.ezCtrlFormatBlock.disabled = bState;
+    parent.document.all.ezCtrlFontName.disabled = bState;
+    parent.document.all.ezCtrlFontSize.disabled = bState;    
+  }
+  colTD = parent.document.body.getElementsByTagName("TD");
+  for(var z=0;z<colTD.length;z++){
+     if (colTD[z].id.indexOf(sFilter) != -1){
+       if (getBooleanValue(colTD[z].disable) != bState){
+         colTD[z].disable = bState;
+       }
+     }
+  }
+  focus();  
+}
+function selectedObject(tp,el){
+  this.type = tp;
+  this.element = el;
+}
+/*------------------------------------------------
+          Event Handlers
+---------------------------------------------------*/
+function selectionChanged() {
+   if(WYSIWYGMode){
+     switch(element.document.selection.type){
+      case "Control":
+        ControlsDisabled = true;              
+      case "Text":
+        if (ControlsDisabled)
+         ControlsDisabled = false;
+        break;
+     }
+  }
+}
+function setStatus(){
+   if(WYSIWYGMode){
+     if (element.document.selection.type == "Control"){
+        elSelected = new selectedObject(event.srcElement.tagName,event.srcElement);
+     }else if (getCurrTD() && TableControlsDisabled){
+        TableControlsDisabled = false;
+        elSelected = null;
+     }else if (!getCurrTD() && !TableControlsDisabled){
+        TableControlsDisabled = true;  
+        elSelected = null;
+     }else
+        elSelected = null;
+    setCurrentStatus();
+  }
+}
+function updateHiddenField() {
+  var HTML = WYSIWYGMode?element.document.body.innerHTML:element.document.body.innerText; 
+  if (parent.useRelativePaths){
+    var pattern = new RegExp('(=")http:\/\/'+element.document.location.host,"g");
+    HTML = HTML.replace(pattern,"$1");
+  }
+   
+}
+/*------------------------------------------------
+          Initialization function
+---------------------------------------------------*/
+function init(){
+  // Build toolbar array
+  aToolBarStatus[0] = new ControlStatus("Bold", parent.document.body.all["ezCtrlBold"],false);
+  aToolBarStatus[1] = new ControlStatus("Italic", parent.document.body.all["ezCtrlItalic"],false);
+  aToolBarStatus[2] = new ControlStatus("Underline", parent.document.body.all["ezCtrlUnderline"],false);
+  aToolBarStatus[3] = new ControlStatus("JustifyLeft", parent.document.body.all["ezCtrlJustifyLeft"],false);
+  aToolBarStatus[4] = new ControlStatus("JustifyCenter", parent.document.body.all["ezCtrlJustifyCenter"],false);  
+  aToolBarStatus[5] = new ControlStatus("JustifyRight", parent.document.body.all["ezCtrlJustifyRight"],false);  
+  aToolBarStatus[6] = new ControlStatus("Superscript", parent.document.body.all["ezCtrlSuper"],false);  
+  aToolBarStatus[7] = new ControlStatus("Subscript", parent.document.body.all["ezCtrlSub"],false);    
+  aToolBarStatus[8] = new ControlStatus("Unlink", parent.document.body.all["ezRemLink"],false);
+  aToolBarStatus[9] = new ControlStatus("Cut", parent.document.body.all["ezCut"],true);
+  aToolBarStatus[10] = new ControlStatus("Cut", parent.document.body.all["ezCopy"],true); //not an mistake, the "Cut" command has better state results
+  aToolBarStatus[11] = new ControlStatus("Paste", parent.document.body.all["ezPaste"],true); 
+  aToolBarStatus[12] = new ControlStatus("Delete", parent.document.body.all["ezDelete"],true); 
+  aToolBarStatus[13] = new ControlStatus("InsertOrderedList", parent.document.body.all["ezCtrlOrderedList"],false);
+  aToolBarStatus[14] = new ControlStatus("InsertUnorderedList", parent.document.body.all["ezCtrlUnorderedList"],false);
+  aToolBarStatus[15] = new ControlStatus("Cut", parent.document.body.all["ezInsLink"],false);  
+          
+  // Need to reset these properties to boolean datatypes
+  BordersVisible = getBooleanValue("BordersVisible");
+  WYSIWYGMode = getBooleanValue("WYSIWYGMode");
+  ControlsDisabled = getBooleanValue("ControlsDisabled");
+  TableControlsDisabled = getBooleanValue("TableControlsDisabled");  
+
+  // Now attach handler to capture all future property changes 
+  attachEvent("onpropertychange", ezEdit_PropertyChange);
+
+  parent.ezedit = element;
+
+  //setCurrentStatus();
+    
+//  ezEdit_loadHTML(parent.ezInitHTML);
+
+
+}
+</script>
+
+</public:component>

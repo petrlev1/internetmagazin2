@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Цвета</h1>
+
+<form action="/admin/?topic=color" method="POST" ENCTYPE="multipart/form-data">
+<INPUT TYPE="hidden" NAME="intro" value="1">
+<INPUT TYPE="hidden" NAME="introupd" value="{id}">
+
+<!--<div>Фото</div>
+<input name="dfile" type="file" style="width: 190px;" class="box">-->
+<!--<br><br><div><b>Ссылка с фото</b></div>-->
+<INPUT TYPE="hidden" NAME="intro_link_name" value="{intro_link}" size="35">
+<br><div><b>Название</b></div>
+<INPUT TYPE="text" NAME="intro_collname" value="{intro_collname}" size="35">
+<!--<br><br><div><b>Дизайн</b></div>-->
+<INPUT TYPE="hidden" NAME="intro_dizname" value="{intro_dizname}" size="35">
+<br><br>
+<input type="submit" value="Сохранить">
+
+      
+
+	  
+		  
+		 </td>
+         </tr>
+        </table>	
+	  </form>
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=color" name="EditForm"><br>
+<h2>Список параметров</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+	<td class="catalogTit"><div class="catalogTitFont">Название:</div></td>
+	<!--<td class="catalogTit"><div class="catalogTitFont">Фото:</div></td>-->
+
+	<td class="catalogTit"><div class="catalogTitFont">Ред.:</div></td>
+	<!--<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>-->
+	<td class="catalogTit"><div class="catalogTitFont"><font color="red">Уд.</font></div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Сорт.</div></td>
+	
+  </tr>

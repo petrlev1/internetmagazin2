@@ -1,0 +1,34 @@
+<!-- ezEdit
+ 
+  file:colorpalette.htm
+  copyright:2000 SiteObjects, Inc.
+  author:Brett Suwyn
+  mailto:ezEdit@siteobjects.com
+  http://www.siteobjects.com/
+  
+  version: 1.0
+  date:  8/8/2000
+  
+  notes:
+    9/18/2000 - Moved js into included file
+    7/31/2000 - Re-worked doClick function
+ -->
+ 
+<html id="container">
+<head><title>Редактирование данных</title>
+<style>
+  body, #PaletteStatus{background: buttonface; border-width: 1px; border-style: solid;border-color: buttonhighlight buttonshadow buttonshadow buttonhighlight; height: 1px;width:100%;padding: 1px;cursor:default;margin:0px;margin:0px}
+  #Palette{cursor:hand;}
+  #Palette td {width:8px;height:15px;}
+  #PaletteStatus{padding:5px;}
+  #cpAColor,#cpAColorHex{text-align:center;width:50px;height:15px;font-family:menu;}
+  #cpAColor {color:highlighttext;font-size:10px}
+  #cpAColorHex {color:menutext;font-size:12px}  
+</style>
+<script language="JavaScript1.2" src="includes/colorpalette.js"></script>
+</head>
+<body>
+<table border="1" cellspacing="0" cellpadding="0" id="Palette"></table>
+<table id="PaletteStatus"><tr><td><span id="cpAColor"></span></td><td><span id="cpAColorHex"></span></td></tr></table>
+</body>
+</html>

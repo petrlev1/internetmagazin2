@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Файл менеджер</h1>
+ {error}
+<form action="/admin/?topic=file_m" method="POST" ENCTYPE="multipart/form-data">
+
+<input name="load_file" type="file" style="width: 190px;" class="box">
+<br><br>
+<INPUT TYPE="text" NAME="file_name" value="имя файла" size="21" onClick="this.value='';">
+<br><br>
+<input type="submit" value="Загрузить">
+
+      
+
+	  
+		  
+		 </td>
+         </tr>
+        </table>	
+	  </form>
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=file_m" name="EditForm"><br>
+<h2>Список загруженных файлов</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+    <td class="catalogTit"><div class="catalogTitFont">Имя файла:</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Файл:</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">&nbsp;Ссылка:</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>
+	<td class="catalogTit"><div class="catalogTitFont"><font color="red">Уд.</font></div></td>
+	
+  </tr>

@@ -1,0 +1,103 @@
+<!-- ezEdit
+ 
+  file:table.htm
+  copyright:2000 SiteObjects, Inc.
+  author:Brett Suwyn
+  mailto:ezEdit@siteobjects.com
+  http://www.siteobjects.com/
+  
+  version: 1.0
+  date:  8/8/2000
+  
+  notes:
+      8/1/2000: Added Style field
+ -->
+<html>
+<head><title>ezEdit - Table</title>
+<style>
+  body, .button{background: buttonface;font-family:"MS Sans Serif";font-size:9pt;margin:0px;}
+  .text {font-family:"MS Sans Serif";font-size:9pt;padding:5px 0px 5px 0px;}
+  .inputs {padding-right:15px;}
+  .controls{width:100%;text-align:right;margin-top:5px;margin-right:3px}
+</style>
+<script language="JScript">
+  function isInt() {
+    return ((event.keyCode >= 48) && (event.keyCode <= 57))
+  }
+</script>
+<script language="JScript" for="window" event="onload">
+  for ( elem in window.dialogArguments )
+  {
+    switch( elem )
+    {
+    case "rows":
+      tbRows.value = window.dialogArguments["rows"];
+      if (window.dialogArguments["edit"])
+        tbRows.disabled = true;      
+      break;
+    case "columns":
+      tbColumns.value = window.dialogArguments["columns"];
+      if (window.dialogArguments["edit"])
+        tbColumns.disabled = true;
+      break;
+    case "padding":
+      tbPadding.value = window.dialogArguments["padding"];
+      break;
+    case "spacing":
+      tbSpacing.value = window.dialogArguments["spacing"];
+      break;
+    case "width":
+      tbWidth.value = window.dialogArguments["width"];
+      break;
+    case "border":
+      tbBorder.value = window.dialogArguments["border"];
+      break;      
+    case "style":
+      tbStyle.value = window.dialogArguments["style"];
+      break;     
+    }
+  }
+</script>
+<script language="JScript" for="OK" event="onclick">
+  var arr = new Array();
+  arr["border"] = tbBorder.value;  
+  arr["rows"] = tbRows.value;
+  arr["columns"] = tbColumns.value;
+  arr["padding"] = tbPadding.value;
+  arr["spacing"] = tbSpacing.value;
+  arr["width"] = tbWidth.value;
+  arr["style"] = tbStyle.value;
+  window.returnValue = arr;
+  window.close();
+</script>
+</head>
+<body scroll="no">
+<fieldset title="Table Properties"><legend>Table Properties</legend>
+<table>
+<tr>
+  <td class="text">Rows:</td>
+  <td class="inputs"><input name="tbRows" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"></td>  
+  <td class="text">Columns:</td>
+  <td class="inputs"><input name="tbColumns" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"></td>  
+</tr>
+<tr>
+  <td class="text">Padding:</td>
+  <td class="inputs"><input name="tbPadding" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"></td>  
+  <td class="text">Spacing:</td>
+  <td class="inputs"><input name="tbSpacing" type="text" size="3" maxlength="2" onkeypress="event.returnValue=isInt();"></td>  
+</tr>
+<tr>
+  <td class="text">Width:</td>
+  <td class="inputs"><input name="tbWidth" type="text" size="3" maxlength="4" onkeypress="event.returnValue=isInt();"></td>  
+  <td class="text">Border:</td>
+  <td class="inputs"><input name="tbBorder" type="text" size="3" maxlength="1" onkeypress="event.returnValue=isInt();"></td>  
+</tr>
+<tr>
+  <td class="text">Style:</td>
+  <td class="inputs" colspan="3"><input name="tbStyle" type="text" size="25" maxlength="255"></td>  
+</tr>
+</table>
+</fieldset>
+<div class="controls"><input id="OK" class="button" type="button" value="     OK     "> <input class="button" type="button" value="  Cancel  " onclick="window.close();"></div>
+</body>
+</html>

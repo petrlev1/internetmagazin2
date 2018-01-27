@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+ <h1>Галерея</h1>
+
+<form action="/admin/?topic=slgal" method="POST" ENCTYPE="multipart/form-data">
+<INPUT TYPE="hidden" NAME="slgale" value="1">
+<INPUT TYPE="hidden" NAME="slgaleupd" value="{id}">
+<div>Фото</div>
+<input name="dfile" type="file" style="width: 190px;" class="box">
+<br><br><div><b>Ссылка с фото</b></div>
+<INPUT TYPE="text" NAME="slgal_link_name" value="{gal_link}" size="35">
+<br><br><div><b>Название</b></div>
+<INPUT TYPE="text" NAME="slgal_collname" value="{gal_collname}" size="35">
+
+<INPUT TYPE="hidden" NAME="slgal_dizname" value="{gal_dizname}" size="35">
+<br><br>
+<input type="submit" value="Добавить/Обновить">
+
+      
+
+	  
+		  
+		 </td>
+         </tr>
+        </table>	
+	  </form>
+
+ <table  border="0" cellspacing="0" cellpadding="4">
+		    <tr>
+		      <td>
+			 
+<FORM METHOD="POST" ACTION="/admin/?topic=slgal" name="EditForm"><br>
+<h2>Список загруженных фото</h2>
+
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+  <tr>
+	<td class="catalogTit"><div class="catalogTitFont">Название:</div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Фото:</div></td>
+
+	<td class="catalogTit"><div class="catalogTitFont">Ред.:</div></td>
+	<!--<td class="catalogTit"><div class="catalogTitFont">Уд.</div></td>-->
+	<td class="catalogTit"><div class="catalogTitFont"><font color="red">Уд.</font></div></td>
+	<td class="catalogTit"><div class="catalogTitFont">Сорт.</div></td>
+	
+  </tr>

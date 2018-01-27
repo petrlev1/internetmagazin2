@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="/Lib/css/jquery.cleditor.css" />    
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="/Lib/javascript/jquery.min.js"></script>    
+<script type="text/javascript" src="/Lib/javascript/jquery.cleditor.min.js"></script>   
+
+
+  
+
+
+<script type="text/javascript">      
+$(document).ready(function() 
+{        
+$("#input").cleditor();      
+});    
+</script>
+
+
+
+<script>
+
+function Post()
+{
+document.myform.cat_desc.value = newTextArea.document.body.innerHTML;
+myform.submit();
+}
+
+function EditorExecCommand( command_param )
+{
+var tr = frames.newTextArea.document.selection.createRange();
+tr.select();
+tr.execCommand( command_param );
+frames.newTextArea1.focus(); 
+}
+
+function Fonts ( command_param, value )
+{
+var tr = frames.newTextArea.document.selection.createRange();
+tr.select();
+tr.execCommand( command_param,false, value );
+frames.newTextArea.focus(); 
+}
+function upload_patt()
+{
+document.myform.descpattern2.value = document.myform.descpattern.value;
+}
+
+function AddLink()
+{
+var tr = frames.newTextArea.document.selection.createRange();
+     document.execCommand("CreateLink");  
+}
+</script>
+</head>
+<body style="margin-top: 2px;">
+<table width="100%"  border="0" cellpadding="1" cellspacing="0" bgcolor="#0679BA">
+  <tr>
+    <td width="100%"><div class="logo" style="margin-left: 2px;">Редактирование "{name}"</div></td>
+    <td width="1" align="right"><input name="button" type="button" onClick="window.close()" value="Закрыть окно"></td>
+  </tr>
+</table>
+
+<a href="/admin/moduls/catalog.php?id={id}">Добавить новую позицию</a>
+
+
+<table>
+<tr>
+	<td>
+ <FORM METHOD="POST" name="myform2" enctype="multipart/form-data" ACTION="/admin/moduls/catalog.php?id={id}">
+ Изображение каталога<br><INPUT TYPE="file" NAME="dfile" size=25>
+ <br><input type="hidden" name="minorimg" value="1">
+ <input type="submit" value="Add">
+ </form></td>
+	<td valign=top>{minorimg}</td>
+</tr>
+</table><br>
+
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+	  <FORM METHOD="POST" name="myform" enctype="multipart/form-data" ACTION="/admin/moduls/catalog.php?id={id}">
+	  <TEXTAREA NAME="descpattern" style="display: none;" ROWS="1" COLS="1">{descpattern}</TEXTAREA>
+	 
+	  <INPUT TYPE="hidden" name="make_desc" value="1">
+	  <INPUT TYPE="hidden" name="upd_rec" value="{upd_rec}">
+	<br>
+
+НАИМЕНОВАНИЕ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Цена<br>
+		      <INPUT TYPE="text" NAME="cat_title" value="{cat_title}" size="60" class="box2">&nbsp;&nbsp;
+<INPUT TYPE="text" NAME="cat_price" value="{cat_price}" size="15" class="box2">&nbsp;
+
+<SELECT NAME="valute"><option {rub_sel} selected>руб.</option><!--<option {doll_sel}>$</option><option {eur_sel}>€</option>--></SELECT>
+			 <br><br>
+
+			  <select name="cat_reserve">
+				<option value="" selected>Производитель
+				{manuf}
+			  </select>
+
+			   &nbsp;&nbsp;
+
+			  <select name="cat_sizes">
+				<option value="" selected>Толщина
+				{thickness}
+			  </select>
+&nbsp;&nbsp;
+
+			  <select name="cat_colors">
+				<option value="" selected>Цвет
+				{colors}
+			  </select>
+
+			  &nbsp;&nbsp;
+
+			  <select name="sizes">
+				<option value="" selected>Размер
+				{sizes}
+			  </select>
+             <!-- <INPUT TYPE="text" NAME="cat_number" value="{cat_number}" size="45" class="box2">-->
+<br><br>
+<div>
+<TEXTAREA NAME="cat_desc" ROWS="5" COLS="35" style="display:none">{cat_desc}</TEXTAREA>
+<div style="margin-top: 10px;">ОПИСАНИЕ ТОВАРА</div>
+
+<textarea id="input" name="input">{cat_desc}</textarea>
+
+
+
+</div>
+
+<table border="0" width="70%">
+  <tr>
+    <td width="60%" valign="bottom"><div style="margin-top: 10px;">ФОТОГРАФИЯ</div>
+<INPUT TYPE="file" NAME="dfile" size=25></td>
+  </tr>
+</table>
+<!--<br>
+<INPUT TYPE="checkbox" NAME="publ" {publ_check}> - Статус публикации-->
+<br>
+<input type="submit" value="Добавить/сохранить" >
+<br>
+</FORM>
+<FORM METHOD="POST" ACTION="/admin/moduls/catalog.php?id={id}">
+<INPUT TYPE="hidden" value="1" NAME="change">
+<h2>Список товаров данного каталога</h2>
+<table cellspacing="0" cellpadding="0" style="border-width: 1; border-style:solid;">
+<tr>
+<td class="catalogTit"><div class="catalogTitFont">Фото</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Модель</div></td>
+<!--<td class="catalogTit"><div class="catalogTitFont">Описание</div></td>-->
+<td class="catalogTit"><div class="catalogTitFont">Дата</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Скр</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Вх</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Низ</div></td>
+<!--<td class="catalogTit"><div class="catalogTitFont">&nbsp;Поз.</div></td>-->
+<!--<td class="catalogTit"><div class="catalogTitFont">&nbsp;Цены.</div></td>-->
+<td class="catalogTit"><div class="catalogTitFont">Ред.</div></td>
+<td class="catalogTit"><div class="catalogTitFont">Фот.</div></td>
+<td class="catalogTit"><div class="catalogTitFont"><font color="red">Удал.</font></div></td>
+</tr>

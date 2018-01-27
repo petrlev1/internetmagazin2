@@ -1,0 +1,86 @@
+<!-- ezEdit
+ 
+  file:record.htc
+  copyright:2000 SiteObjects, Inc.
+  author:Brett Suwyn
+  mailto:ezTools@siteobjects.com
+  http://www.siteobjects.com/
+  
+  version: 
+  date:  8/12/2000
+  
+  notes:
+  
+ -->
+<public:component>
+
+<public:attach event="oncontentready" onevent="init()"/>
+<public:attach event="onmousedown" onevent="MClick()"/>
+<public:attach event="ondblclick" onevent="MdblClick()"/>
+
+<public:property name="isSelected" value="false" />
+
+<script>
+
+function MdblClick(){
+  var objType,objName;
+  var childNodes = xmlFileListing.XMLDocument.documentElement.childNodes;
+  objType = childNodes.item(element.parentElement.rowIndex).childNodes.item(0).text;
+  objName = childNodes.item(element.parentElement.rowIndex).childNodes.item(2).text;
+  
+  if(objType == "Dir") {
+    relPath += objName + "/";
+    getDirectoryContents(relPath);
+  }else{
+    insertImage();
+  }
+}
+
+function MClick(){
+  var objType,objName;
+  var childNodes = xmlFileListing.XMLDocument.documentElement.childNodes;
+  objType = childNodes.item(element.parentElement.rowIndex).childNodes.item(0).text;
+  if (objType == "File") insertImg.disable = 0;
+  else insertImg.disable = 1;
+  var el = element;
+  el.isSelected = !el.isSelected;
+}
+
+
+function propChange() {
+  switch (event.propertyName) {
+    case "isSelected":
+        changeSelected();
+      break;
+  } 
+}
+
+
+function changeSelected(){
+  if (isSelected){
+   with (style){
+      color = "highlighttext";
+      backgroundColor = "highlight";
+    }
+    dFileListing.addSelection(element);
+  }else{
+   with (style){
+      color = "#000000";
+      backgroundColor = "#ffffff";
+    }
+    dFileListing.removeSelection(element);
+  }
+}
+
+function getBooleanValue(b){
+  return (b.toLowerCase == "true" || b == "1");
+}
+
+function init(){
+  isSelected = getBooleanValue(isSelected);
+  attachEvent("onpropertychange", propChange);
+}
+
+</script>
+
+</public:component>

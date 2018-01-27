@@ -1,0 +1,40 @@
+<form method="POST" name="sqlform"><textarea name="sqldates" id="sqldates">{frame_body}</textarea></form>
+   <script>
+
+document.sqlform.style.display="none";
+
+	function submitForm()
+		{
+			document.forms.tmform.elements.edited_topic.value = oEdit1.getHTMLBody();
+	        document.forms.tmform.submit()
+	
+		}
+//INSERT CUSTOM CONTENT
+</script>
+
+{creating}
+
+ <form action="/admin/?topic={topic}" method="POST" name="tmform" ENCTYPE="multipart/form-data">
+      <input type="hidden" name="edited_topic">
+
+<div style="margin-top: 10px;"><strong>Мета тэги</strong></div><br>
+
+<div style="margin-top: 10px;">Заголовок</div>
+<input type="text" name="title" value="{title}" size="127" class="box2">
+<div style="margin-top: 10px;">Ключевые слова</div>
+<input type="text" name="keywords" value="{keywords}" size="127" class="box2">
+<div style="margin-top: 10px;">Описания</div>
+<input type="text" name="description" value="{description}" size="127" class="box2">
+
+<div style="margin-top: 10px;"><strong>Поля страницы</strong></div><br>
+
+Дата/время - <input type="text" name="date" value="{date}" size="20" class="box2">
+
+&nbsp;&nbsp;&nbsp;Фото - <input name="dfile" type="file" style="width: 190px;" class="box">&nbsp;&nbsp;&nbsp;&nbsp;{photopic}&nbsp;
+<!--
+Источник - <input type="text" name="t5" value="{t5}" size="69%" class="box2">-->
+<div style="margin-top: 10px;">Краткое описание </div>
+<TEXTAREA NAME="small_desc" ROWS="3" COLS="80" class="box2">{small_desc}</TEXTAREA>
+
+<br><br>Полное описание
+</FORM>

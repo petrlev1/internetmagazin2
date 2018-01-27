@@ -1,0 +1,11 @@
+<tr align="center">
+    <td height="1" colspan="15" class="catalogVLineColor"><img src="/img/space.gif" width="1" height="1"></td>
+    </tr>
+<tr bgcolor="">
+<td><div class="catalogTextFont">{videodesc}</div></td>
+<td><INPUT TYPE="text" onclick="select();" value="{videocode}" size=5></td>
+<td><div class="catalogTextFont"><a href=#>Смотреть</a>&nbsp;</div></td>
+
+<td><a href="#" onclick="if (!confirm('Удалить файл ?')) return false; else location.href='/admin/?topic=file_m&del_file={id}';"><img src="/admin/images/del.gif" alt="Удалить" border="0"></a></td>
+<td><div class="catalogTextFont"><INPUT TYPE="checkbox" NAME="del_files[]" value="{id}"></div></td>
+</tr>

@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Редактировать</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link href="/Lib/css/admin.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/adminFrame.css" rel="stylesheet" type="text/css">
+<link href="/Lib/css/catalog.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+    <h1>Заполнение страницы / подстраницы</h1>
+<br>
+      <div style="margin-top: 10px;">Из выпадающего списка выберите страницу / подстраницу, которую хотите заполнить</div>
+<br>
+
+<SELECT NAME="pages" class="box2">
+<option value="">Список</option>
+{pages_list}
+</SELECT>
+<br><br>
+		  <INPUT TYPE="button" value="Дальше" onClick="location.href='/admin/?topic='+ pages.value">
+		 </td>
+         </tr>
+        </table>	
+	 
+</html>

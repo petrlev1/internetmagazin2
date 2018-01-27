@@ -1,0 +1,22 @@
+ <h1>Добавить Администратора</h1>
+<br>
+<font color="red">{error}</font>
+<FORM METHOD="POST" ACTION="/admin/?topic=add_pass">
+
+<div style="margin-top: 10px;"><strong>Логин:</strong></div>
+<input type="text" name="add_login" size="25">
+<br><br>
+<div style="margin-top: 10px;"><strong>Пароль:</strong></div>
+<input type="text" name="add_pass" size="25">
+<br><br>
+<div style="margin-top: 10px;"><strong>Уровень доступа:</strong></div>
+<SELECT NAME="admin_level">
+<option value="">Уровень доступа</option>
+<option value="operator">Оператор</option>
+<option value="user">Пользователь</option>
+</SELECT>
+<br><br>
+<INPUT TYPE="submit" value="Добавить">
+
+</FORM>
+

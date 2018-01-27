@@ -1,0 +1,56 @@
+[21-Mar-2005 20:21:50] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/saunavip/public_html/Lib/saunavip.object.inc:111) in /home/saunavip/public_html/Lib/saunavip.object.inc on line 126
+[22-Mar-2005 10:44:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:44:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:44:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:44:47] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:44:47] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:44:47] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:45:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:45:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:45:35] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:45:41] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:45:41] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:45:41] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:45:50] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:45:50] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:45:50] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:46:33] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:46:33] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:46:33] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:46:55] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:46:55] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:46:55] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:47:09] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:47:09] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:47:09] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:47:19] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:47:19] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:47:19] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:47:29] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:47:29] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:47:29] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:47:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:47:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:47:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:47:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/saunavip/public_html/Lib/saunavip.object.inc:108) in /home/saunavip/public_html/Lib/saunavip.object.inc on line 294
+[22-Mar-2005 10:48:00] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:48:00] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:48:00] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:48:00] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/saunavip/public_html/Lib/saunavip.object.inc:108) in /home/saunavip/public_html/Lib/saunavip.object.inc on line 294
+[22-Mar-2005 10:48:21] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:48:21] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:48:21] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:54:26] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:54:26] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:54:26] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:54:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:54:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:54:48] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:54:48] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/saunavip/public_html/Lib/saunavip.object.inc:108) in /home/saunavip/public_html/Lib/saunavip.object.inc on line 167
+[22-Mar-2005 10:55:14] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:55:14] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:55:14] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:55:43] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 108
+[22-Mar-2005 10:55:43] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 109
+[22-Mar-2005 10:55:43] PHP Notice:  Undefined variable:  mtopic in /home/saunavip/public_html/Lib/saunavip.object.inc on line 110
+[22-Mar-2005 10:55:43] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/saunavip/public_html/Lib/saunavip.object.inc:108) in /home/saunavip/public_html/Lib/saunavip.object.inc on line 277

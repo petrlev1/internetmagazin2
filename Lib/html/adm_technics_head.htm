@@ -1,0 +1,44 @@
+ <h1>Добавить технику</h1>
+<form method="POST" name="form"><textarea name="sqldates">
+{technics_desc}
+</textarea></form>
+
+   <script>
+          document.form.style.display="none";
+
+		  function Save() {
+
+document.tmform.technics_desc.value = wysiwyg.document.body.innerHTML;
+tmform.submit();
+}
+   </script>
+
+
+ <form action="/admin/?topic=technics" method="POST" name="tmform">
+      <input type="hidden" name="technics_desc">
+	  <input type="hidden" name="id" value="{id}">
+<INPUT TYPE="hidden" NAME="table" value="{table}">
+<div style="margin-top: 10px;"><strong>Мета тэги</strong></div><br>
+
+<div style="margin-top: 10px;">Заголовок</div>
+<input type="text" name="t1" value="{t1}" size="127" class="box2">
+<div style="margin-top: 10px;">Ключевые слова</div>
+<input type="text" name="t2" value="{t2}" size="127" class="box2">
+<div style="margin-top: 10px;">Описания</div>
+<input type="text" name="t3" value="{t3}" size="127" class="box2">
+
+<div style="margin-top: 10px;"><strong>Поля страницы</strong></div><br>
+
+Дата/время - <input type="text" name="t4" value="{date}" size="20" class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+Вид техники - <input type="text" name="t5" value="{t5}" size="43" class="box2"><br><br>
+Класс техники - <input type="text" name="t6" value="{t6}" size="43" class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Модель - <input type="text" name="t7" value="{t7}" size="43" class="box2"><br><br>
+<div style="margin-top: 10px;">Краткое описание </div>
+<TEXTAREA NAME="t8" ROWS="3" COLS="80" class="box2">{t8}</TEXTAREA>
+<br>
+Статус публикации - <INPUT TYPE="checkbox" NAME="t9" {check} class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оператор - <INPUT TYPE="text" NAME="t10" value="{t10}" class="box2" size="80%">
+<br><br>Полный текст

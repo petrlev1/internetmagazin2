@@ -1,0 +1,46 @@
+ <h1>Добавить Сервис</h1>
+<form method="POST" name="form"><textarea name="sqldates">
+{service_desc}
+</textarea></form>
+
+   <script>
+          document.form.style.display="none";
+
+		  function Save() {
+
+document.tmform.service_desc.value = wysiwyg.document.body.innerHTML;
+tmform.submit();
+}
+   </script>
+
+
+ <form action="/admin/?topic=service" method="POST" name="tmform">
+      <input type="hidden" name="service_desc">
+	  <input type="hidden" name="id" value="{id}">
+<div style="margin-top: 10px;"><strong>Мета тэги</strong></div><br>
+
+<div style="margin-top: 10px;">Заголовок</div>
+<input type="text" name="t1" value="{t1}" size="127" class="box2">
+<div style="margin-top: 10px;">Ключевые слова</div>
+<input type="text" name="t2" value="{t2}" size="127" class="box2">
+<div style="margin-top: 10px;">Описания</div>
+<input type="text" name="t3" value="{t3}" size="127" class="box2">
+
+<div style="margin-top: 10px;"><strong>Поля страницы</strong></div><br>
+
+Дата/время - <input type="text" name="t4" value="{date}" size="20" class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<i>Название компании</i> - <input type="text" name="t5" value="{t5}" size="48" class="box2"><br><br>
+Страна - <input type="text" name="t6" value="{t6}" size="15" class="box2">&nbsp;&nbsp;
+Город - <input type="text" name="t7" value="{t7}" size="15" class="box2">&nbsp;&nbsp;
+Контактные данные - <input type="text" name="t8" value="{t8}" size="39" class="box2"><br><br>
+Руководство компании и иная информация - <input type="text" name="t9" value="{t9}" size="73" class="box2"><br><br>
+Заявки и объявления - <input type="text" name="t10" value="{t10}" size="43" class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br>
+<div style="margin-top: 10px;">Краткое описание </div>
+<TEXTAREA NAME="t11" ROWS="3" COLS="80" class="box2">{t11}</TEXTAREA>
+<br>
+Статус публикации - <INPUT TYPE="checkbox" NAME="t12" {check} class="box2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Оператор - <INPUT TYPE="text" NAME="t13" value="{t13}" class="box2" size="80%">
+<br><br><i>Полный текст</i>

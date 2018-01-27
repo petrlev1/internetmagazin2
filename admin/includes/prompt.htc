@@ -1,0 +1,9 @@
+<script language="jscript">
+
+    attachEvent("onMouseOver", show_prompt); 
+    attachEvent("onMouseOut", hide_prompt);
+
+
+
+</script>
+
