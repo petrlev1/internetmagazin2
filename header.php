@@ -63,21 +63,23 @@ while ($rows = mysql_fetch_array($sql_res))
                 <!--                Start. Include cart data template-->
                 <div id="tinyBask" class="frame-cleaner">
                     
-    <div class="btn-bask">
-       <button>
-            <span class="icon_cleaner"></span>
+    <div class="btn-bask" style="height: 29px;">
+      
+            
             <span class="text-cleaner">
-                <span class="text-el"><a href=/?page=cart style="color: white; text-decoration: none;"><?php 
-
-
+                <span class="text-el">
 				
+				<a href=/?page=cart style="display: block; color: white; text-decoration: none; padding: 7px">
+				<span class="icon_cleaner"></span>
+				<?php 
+
 				if ($main->goodscount()=="0") echo "Корзина пуста";
 				
 				else echo $main->goodscount()." товаров";
 				
 				?></a></span>
             </span>
-        </button>
+       
     </div>
                 </div>
                 <!--                    End. Include cart data template-->

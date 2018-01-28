@@ -72,7 +72,7 @@ if (isset($_POST['send_form']) && $_POST['send_form']==1)
 
 	$send_form_string = $form_title.$order.$send_date;
 		
-	$send_to = "timalev@mail.ru";
+	$send_to = "levendeevp@gmail.com";
 
 	//$send_to3 = "tim@levbrothers.ru";
 
