@@ -35,12 +35,14 @@ $sql_q = "SELECT * FROM ".$main->pre."pages WHERE pages='' AND topics!='katalog'
 $sql_res = $main->q($sql_q);
 while ($rows = mysql_fetch_array($sql_res))
 {
-	
+	if ($rows["id"]!=700)
+	{
 ?>
 <li>
             <a href="/?page=<?php echo $rows["id"]; ?>" target="_self" title="<?php echo $rows["pages_name"]; ?>"><?php echo $rows["pages_name"]; ?></a>
     </li>
 <?php 
+	}
 }
 ?>
 
@@ -70,14 +72,15 @@ while ($rows = mysql_fetch_array($sql_res))
                 <span class="text-el">
 				
 				<a href=/?page=cart style="display: block; color: white; text-decoration: none; padding: 7px">
+				<nobr>
 				<span class="icon_cleaner"></span>
 				<?php 
 
-				if ($main->goodscount()=="0") echo "Корзина пуста";
+				if ($main->goodscount()=="0") echo "<nobr>Корзина пуста</nobr>";
 				
 				else echo $main->goodscount()." товаров";
 				
-				?></a></span>
+				?></a></nobr></span>
             </span>
        
     </div>

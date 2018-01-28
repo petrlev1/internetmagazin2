@@ -215,9 +215,6 @@ echo "<li class=\"btn-crumb\"><button typeof=\"v:Breadcrumb\" disabled=\"disable
 
             <div class="frame-baner frame-baner-start_page">
 
-			<a href="/products.php?category=katalog_1&amp;id=663">Портативные зарядные устройства</a>
-
-
 			<?php
 
 if (isset($_GET["page"]) && $_GET["page"]!=="")
@@ -270,6 +267,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 					break;
 
 						default:
+					
 							echo "<h1>".$main->get_record($main->pre."pages",$_GET["page"],"pages_name")."</h1><br>";
 						echo $main->get_record($main->pre."pages",$_GET["page"],"big_desc");
 				}
@@ -277,6 +275,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
 
 } else {
+	echo $main->get_record($main->pre."pages",700,"big_desc");
 			
 			?>
 
