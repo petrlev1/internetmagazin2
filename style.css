@@ -40,7 +40,7 @@ article, .container, .special-proposition .title-proposition-h{max-width: 980px;
 .frame-baner-start_page .content-carousel{width: 100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;box-sizing: border-box;}
 .content-carousel.container, .items-carousel.container, .baner.container{padding: 0;}
 
-.right-catalog{width: 74.5%;float: right;position: relative;z-index: 0;}
+.right-catalog{ position: relative; z-index: 0; }
 .left-catalog{width: 23.5%;float: left;position: relative;z-index: 1;}
 
 .right-product{width: 232px;float: right;}
@@ -880,7 +880,6 @@ input + .msg{margin-top: 5px;}
 
 /*catalog*/
 .left-catalog{margin-bottom: 30px;}
-.right-catalog{margin-bottom: 30px;}
 
 .nav-sort{position: relative;top: 2px;}
 .nav-sort > li{margin-left: 12px;}
