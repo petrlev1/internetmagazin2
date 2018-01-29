@@ -35,8 +35,8 @@ $catalog = "catalog_".$_GET["id"];
 
 <div itemscope itemtype="http://schema.org/Product" id="product-50285" class="post-50285 product type-product status-publish has-post-thumbnail product_cat-festool-abrasives shipping-taxable purchasable product-type-simple product-cat-festool-abrasives instock">
 
-	<div class="images"><img src="<?php echo $img; ?>" border=0 width=200>
-	</div><br><br>
+	<div class="images"><img src="<?php echo $img; ?>" border=0 width=300>
+	</div><br>
 
 	<div class="summary entry-summary">
 
@@ -111,14 +111,7 @@ $catalog = "catalog_".$_GET["id"];
 </div><!-- #product-50285 -->
 <br>
 <div class="f-s_0">
-    <ul class="tabs tabs-data tabs-product">
-        <li class="active">
-            <button data-href="#view">Характеристики</button>
-        </li>
-        <li><button data-href="#first">Описание</button></li>
-                      
 
-            </ul>
 
     <div class="frame-tabs-ref frame-tabs-product">
         <div id="view">

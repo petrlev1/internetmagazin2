@@ -51,9 +51,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
 
 } else print $main->get_record($main->pre."pages",125,"pages_name"); ?></title>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
-        <meta name="generator" content="ImageCMS" />
+        <meta name="description" content="Интернет-магазин - My Virtual Shop" />
         <meta name = "format-detection" content = "telephone=no" />
          <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
         <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/colorscheme.css" media="all" />

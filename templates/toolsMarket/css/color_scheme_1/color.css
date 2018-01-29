@@ -794,7 +794,7 @@ input[type="text"].error, input[type="password"].error, textarea.error, select.e
 .tabs-data > li.active{background-color: #fafafa;}
 .tabs-data > li.active > a, .tabs-data > li.active > button{color: #333;}
 
-.frame-tabs-product, .frame-tabs-profile{background-color: #fff;border-top-color: #dbdbdb;}
+
 .tabs-compare-category .text-el{color: #e03030;}
 .tabs-compare-category > .active > button{background-color: #e03030;}
 .tabs-compare-category > .active > button:after{border-left-color: #e03030;}

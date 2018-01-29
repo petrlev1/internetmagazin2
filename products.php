@@ -157,9 +157,7 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
     <head>
       <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
         <title><?php echo $title; ?></title>
-        <meta name="description" content="Культиваторы  / toolsmarket" />
-        <meta name="keywords" content="Культиваторы" />
-        <meta name="generator" content="ImageCMS" />
+        <meta name="description" content="<?php echo $title; ?>" />
         <meta name = "format-detection" content = "telephone=no" />
         <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
 	
