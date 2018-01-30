@@ -12,6 +12,7 @@ $main = new main();
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <title><?php
 
 if (isset($_GET["page"]) && $_GET["page"]!=="")
@@ -291,42 +292,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
      
               
         </div>
-        <div class="right-start-page">
         
-          
-            <div class="frame-news">
-        <div class="title-news">
-            <div class="frame-title">
-                <div class="title-h1 d_i title"><a href="/?page=news">Новости</a><span class="icon-news-arr"></span></div>
-            </div>
-        </div>
-        <ul class="items items-news"><?php
-
-		echo $sql_q = "SELECT * FROM ".$main->pre."news WHERE publ!='1' ORDER BY sort ASC";
-		$sql_res = $main->q($sql_q);
-		while ($rows = mysql_fetch_array($sql_res))
-		{
-
-		?>
-                                            <li>
-                    <a href="/?page=new&nid=<?php echo $rows["id"]; ?>" class="frame-photo-title">
-                                                <span class="title"><?php echo $rows["news_title"]; ?></span>
-                    </a>
-                    <div class="description">
-                        Несмотря на бурный рост Интернет-коммерции, далеко не все предприни...                                                <div class="date f-s_0">
-                            <span class="icon_time"></span><span class="text-el"></span>
-                            <span class="day">02 </span>
-                            <span class="month">Марта </span>
-                            <span class="year">2013 </span>
-                        </div>
-                    </div>
-                </li>
-         <?php } ?>                            
-
-                    </ul>
-
-					
-    </div>   <br><br><br>     </div>
     </div>
 </div>                </div>
                 <div class="h-footer"></div>

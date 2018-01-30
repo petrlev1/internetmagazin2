@@ -38,7 +38,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
     </div>
 
 
-<form method="post" name="qua" action="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>">
+<form style="display:none" method="post" name="qua" action="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>">
 	<input type="hidden" name="quantity2" id="quantity2">
 	<input type="hidden" name="incart2" id="incart2">
 	<input type="hidden" name="price2" id="price2">
@@ -157,7 +157,7 @@ $sql_q2 = "SELECT * FROM $catalog_table WHERE publ!='1' $sql_filtr $sort";
 				
 		<tr>
 		  <tr>
-		  <td onMouseOver="document.getElementById('uvel_<?php echo $rows2["id"]; ?>').style.display='block';" onMouseOut="document.getElementById('uvel_<?php echo $rows2["id"]; ?>').style.display='none';" style="background-image: url('/downloads/<?php echo $main->GetPhotos($_GET["id"],$rows2["id"]); ?>'); background-position: 20%; 50%; width: 55px;">
+		  <td onMouseOver="document.getElementById('uvel_<?php echo $rows2["id"]; ?>').style.display='block';" onMouseOut="document.getElementById('uvel_<?php echo $rows2["id"]; ?>').style.display='none';" style="background-image: url('/downloads/<?php echo $main->GetPhotos($_GET["id"],$rows2["id"]); ?>'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
 
 
 
@@ -169,7 +169,7 @@ $sql_q2 = "SELECT * FROM $catalog_table WHERE publ!='1' $sql_filtr $sort";
     <td  width=400 style="text-align: left;"><a href="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&cid=<?php echo $rows2["id"]; ?>" style="text-decoration: none;"><!--<img src="<?php echo $img; ?>"  width="30"  />--><?php echo $rows2["cat_title"]; ?></a>
 
 
-		<div id="uvel_<?php echo $rows2["id"]; ?>" style="display: none; position: absolute; width:400px;height: 300px; margin-top: -180px; left: 10%; border:solid #942106 1px; z-index: 10; overflow: hidden; background-color:#fff; color:#000;text-align: left;padding:10px;" align=left><?php echo "<img src='$img'>"; ?></div>
+		<div id="uvel_<?php echo $rows2["id"]; ?>" class="imgCatalogLine" align=left><?php echo "<img src='$img'>"; ?></div>
 
 </td>
     <td ><?php if (empty($rows2["cat_reserve"])) echo "-"; else echo $rows2["cat_reserve"]; ?></td>

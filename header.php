@@ -3,10 +3,10 @@
     <div class="container">
         <!--        Logo-->
                     <a href="/" class="logo" style="color: #ffffff; font-size: 16px; text-decoration:none;">
-                <nobr>MyVirtualShop.ru</nobr>
+                <nobr><img src="images/logo.svg" />MyVirtualShop.ru</nobr>
             </a>
                 <div class="left-content-header">
-            <div class="header-left-content-header t-a_j">
+          <div class="header-left-content-header t-a_j">
                 <!--                Start. contacts block-->
                 <div class="phones-header" >
                     <div class="f-s_0 d_i-b v-a_b" >

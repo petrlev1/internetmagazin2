@@ -684,7 +684,7 @@ footer [class^="box"] .main-title{text-transform: uppercase;}
 /*/page order view*/
 
 /*catalogue-header*/
-.frame-sort{border: 1px solid transparent;}
+.frame-sort{ padding: 5px 0 15px 0;}
 /*/catalogue-header*/
 .contacts .d_i-b {vertical-align: top; width: 26%;}
 .contacts .d_i-b + div + div {width: 20%;}

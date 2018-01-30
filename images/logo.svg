@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="75.5px"
+	 height="53px" viewBox="0 0 75.5 53" enable-background="new 0 0 75.5 53" xml:space="preserve">
+<g id="Layer_2">
+</g>
+<g id="Layer_1">
+	<g>
+		<polygon fill="#FFFFFF" points="46.77,33.138 23.871,33.138 16.001,13.463 18.113,12.618 25.411,30.862 45.23,30.862 
+			52.527,12.618 54.639,13.463 46.77,33.138 		"/>
+	</g>
+	<g>
+		<g>
+			<polygon fill="#FFFFFF" points="29.005,27.696 25.26,15.365 27.339,14.733 31.084,27.064 29.005,27.696 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="36.407,27.38 34.233,27.38 34.233,15.049 36.407,15.049 36.407,27.38 			"/>
+		</g>
+		<g>
+			<polygon fill="#FFFFFF" points="41.635,27.696 39.556,27.064 43.302,14.733 45.381,15.365 41.635,27.696 			"/>
+		</g>
+	</g>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="3.166" y="2.389" width="70.19" height="47.578">
+			<feFlood  style="flood-color:white;flood-opacity:1" result="back"/>
+			<feBlend  in="SourceGraphic" in2="back" mode="normal"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="3.166" y="2.389" width="70.19" height="47.578" id="SVGID_1_">
+		<g filter="url(#Adobe_OpacityMaskFilter)">
+			<rect x="3.111" y="2.914" transform="matrix(0.899 -0.438 0.438 0.899 -3.1152 16.1505)" width="60.678" height="23.828"/>
+			<ellipse transform="matrix(0.899 -0.438 0.438 0.899 -7.0249 18.9959)" cx="37.663" cy="24.725" rx="36.318" ry="17.59"/>
+		</g>
+	</mask>
+	<g mask="url(#SVGID_1_)">
+		<path fill="#FFFFFF" d="M20.253,49.967c-8.1,0-13.804-2.552-16.063-7.188c-2.269-4.655-0.744-10.746,4.293-17.151
+			c4.878-6.203,12.518-12.033,21.512-16.414c9.031-4.401,18.362-6.825,26.273-6.825c8.099,0,13.803,2.553,16.063,7.189
+			c2.268,4.654,0.743,10.745-4.293,17.15c-4.879,6.204-12.518,12.034-21.511,16.415C37.495,47.543,28.165,49.967,20.253,49.967
+			L20.253,49.967z M56.269,4.389c-7.613,0-16.633,2.352-25.397,6.623c-8.728,4.252-16.12,9.882-20.815,15.853
+			c-4.537,5.77-5.981,11.11-4.067,15.039c1.906,3.91,6.971,6.063,14.265,6.063c7.614,0,16.633-2.352,25.397-6.622
+			c8.727-4.252,16.119-9.882,20.814-15.854c4.537-5.77,5.981-11.11,4.068-15.038C68.627,6.543,63.562,4.389,56.269,4.389
+			L56.269,4.389z"/>
+	</g>
+</g>
+</svg>
