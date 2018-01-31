@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+        <title>Портативные зарядные устройства</title>
+        <meta name="description" content="Портативные зарядные устройства" />
+        <meta name = "format-detection" content = "telephone=no" />
+        <link rel="stylesheet" type="text/css" href="styleTest.css" media="all" />
+	
+
+		
+        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/colorscheme.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/color.css" media="all" />
+
+                     
+                        <script type="text/javascript">
+            var locale = "";
+        </script>
+        <script type="text/javascript" src="/templates/toolsMarket/js/jquery-1.8.3.min.js"></script>
+        <!-- php vars to js -->
+            <script type="text/javascript">
+                    var curr = '$',
+            cartItemsProductsId = null,
+            nextCs = '',
+            nextCsCond = nextCs == '' ? false : true,
+            pricePrecision = parseInt(''),
+            checkProdStock = "", //use in plugin plus minus
+            inServerCompare = parseInt("0"),
+            inServerWishList = parseInt("0"),
+            countViewProd = parseInt("0"),
+            theme = "http://poli/templates/toolsMarket/",
+            siteUrl = "http://poli/",
+            colorScheme = "css/color_scheme_1",
+            isLogin = "0" === '1' ? true : false,
+            typePage = "shop_category",
+            typeMenu = "row";
+        text = {
+            search: function(text) {
+                return 'Введите более' + ' ' + text + ' символов';
+                        },
+                        error: {
+                            notLogin: 'В список желаний могут добавлять только авторизированные пользователи',
+                                        fewsize: function(text) {
+                                            return 'Выберите размер меньше или равно' + ' ' + text + ' пикселей';
+                                                        },
+                                                        enterName: 'Введите название'
+                                                                }
+                                                            }
+    
+        text.inCart = 'В корзине';
+        text.pc = 'шт.';
+        text.quant = 'Кол-во:';
+        text.sum = 'Сумма:';
+        text.toCart = 'Купить';
+        text.pcs = 'Количество:';
+        text.kits = 'Комплектов:';
+        text.captchaText = 'Код протекции';
+        text.plurProd = ['товар', 'товара', 'товаров'];
+        text.plurKits = ['набор', 'набора', 'наборов'];
+        text.plurComments = ['отзыв', 'отзыва', 'отзывов'];
+</script>
+        <script type="text/javascript" src="/templates/toolsMarket/js/settings.js"></script>
+        <!--[if lte IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/lte_ie_8.css" /><![endif]-->
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/ie_7.css" />
+            <script src="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/js/localStorageJSON.js"></script>
+        <![endif]-->
+
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link data-arr="8" rel="stylesheet" type="text/css" href="/templates/toolsMarket/star_rating/css/style.css" />
+
+
+<style>
+.izo-zoom {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.izo-zoom img:nth-of-type(1) {
+  z-index: 2;
+  max-height: 100%;
+  width: 200px;
+  position: relative;
+  box-shadow: -295px 0 0 300px #fff;
+}
+
+.izo-zoom span {
+  border-bottom: 30px solid rgba(0, 0, 0, 0);
+  z-index: 3;
+  width: 100px;
+  position: absolute; left: 0px; top: 0px;
+  cursor: zoom-in;
+}
+.izo-zoom span:nth-child(even) {left: 100px;}
+.izo-zoom span:nth-of-type(3), .izo-zoom span:nth-of-type(4) {top: 10%;}
+.izo-zoom span:nth-of-type(5), .izo-zoom span:nth-of-type(6) {top: 20%;}
+.izo-zoom span:nth-of-type(7), .izo-zoom span:nth-of-type(8) {top: 30%;}
+.izo-zoom span:nth-of-type(9), .izo-zoom span:nth-of-type(10) {top: 40%;}
+.izo-zoom span:nth-of-type(11), .izo-zoom span:nth-of-type(12) {top: 50%;}
+.izo-zoom span:nth-of-type(13), .izo-zoom span:nth-of-type(14) {top: 60%;}
+.izo-zoom span:nth-of-type(15), .izo-zoom span:nth-of-type(16) {top: 70%;}
+.izo-zoom span:nth-of-type(17), .izo-zoom span:nth-of-type(18) {top: 80%;}
+.izo-zoom span:nth-of-type(19), .izo-zoom span:nth-of-type(20) {top: 90%;}
+
+.izo-zoom img:nth-of-type(2) {
+  z-index: -1;
+  height: 0px;
+  width: 0px;
+  position: absolute; left: 205px; top: 0;
+  transition: 1s; -webkit-transition: 1s; -o-transition: 1s;
+}
+.izo-zoom span:hover ~ img:nth-of-type(2) {z-index: 1; height: auto; width: 100%;}
+.izo-zoom span:nth-child(even):hover ~ img:nth-of-type(2) {left: 5px;} 
+.izo-zoom span:nth-of-type(3):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(4):hover ~ img:nth-of-type(2) {top: -40%;} 
+.izo-zoom span:nth-of-type(5):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(6):hover ~ img:nth-of-type(2) {top: -80%;} 
+.izo-zoom span:nth-of-type(7):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(8):hover ~ img:nth-of-type(2) {top: -120%;} 
+.izo-zoom span:nth-of-type(9):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(10):hover ~ img:nth-of-type(2) {top: -160%;} 
+.izo-zoom span:nth-of-type(11):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(12):hover ~ img:nth-of-type(2) {top: -200%;} 
+.izo-zoom span:nth-of-type(13):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(14):hover ~ img:nth-of-type(2) {top: -240%;} 
+.izo-zoom span:nth-of-type(15):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(16):hover ~ img:nth-of-type(2) {top: -280%;} 
+.izo-zoom span:nth-of-type(17):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(18):hover ~ img:nth-of-type(2) {top: -320%;} 
+.izo-zoom span:nth-of-type(19):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(20):hover ~ img:nth-of-type(2) {top: -360%;} 
+
+@media (max-width: 470px) {
+  .izo-zoom img:nth-of-type(1) {width: 100%; box-shadow: none;}
+  .izo-zoom span {display: none;}
+  .izo-zoom {height: auto;}
+}
+</style>
+
+</head>
+
+    <body class="isChrome not-js shop_category"> 
+        <script>
+    var langs = new Object();
+        function lang(value) {
+            return  langs[value] ? langs[value] : value;
+        }
+    
+</script>        <script> 
+ </script>        <div class="main-body">
+            <div class="main-wrap container">
+                <div class="fon-header">
+                    <header>
+                        <div class="content-header">
+    <div class="container">
+        <!--        Logo-->
+                    <a href="/" class="logo" style="color: #ffffff; font-size: 16px; text-decoration:none;">
+                <nobr><img src="images/logo.svg" />MyVirtualShop.ru</nobr>
+            </a>
+                <div class="left-content-header">
+          <div class="header-left-content-header t-a_j">
+                <!--                Start. contacts block-->
+                <div class="phones-header" >
+                    <div class="f-s_0 d_i-b v-a_b" >
+                        <span class="icon_phone_header"></span>
+                        <span class="phone f-s_0" >
+                           <!-- <span class="phone-number" >097 567-43-27</span>
+                            <span class="phone-number">097 567-43-27</span>-->
+                        </span>
+                    </div>
+                    <div class="btn-order-call v-a_b">
+                        <button data-drop="#ordercall" data-tab="true" data-source="http://toolsmarket.imagecmsdemo.net/shop/callback">
+                            <span class="icon_order_call"></span>
+                            <!--<span class="text-el ref-2">Заказать звонок</span>-->
+                        </button>
+                    </div>
+                </div>
+                <!--End. Contacts block-->
+                <div class="d_i-b f-s_0 f0I">
+                    <nav class="d_i-b v-a_m">
+                        <ul class="nav nav-top-menu">
+                            
+
+
+<li>
+            <a href="/?page=125" target="_self" title="О компании">О компании</a>
+    </li>
+<li>
+            <a href="/?page=696" target="_self" title="Партнеры">Партнеры</a>
+    </li>
+<li>
+            <a href="/?page=697" target="_self" title="Доставка и оплата">Доставка и оплата</a>
+    </li>
+<li>
+            <a href="/?page=123" target="_self" title="Контакты">Контакты</a>
+    </li>
+
+                        </ul>
+                    </nav>
+                    <div class="d_i-b v-a_m">
+                        <nav>
+    <ul class="nav nav-enter-reg">
+                    <li class="btn-enter-register">
+                <button type="button" id="loginButton" data-drop=".drop-enter" data-source="http://toolsmarket.imagecmsdemo.net/auth">
+                    <span class="icon_enter"></span>
+                    <span class="text-el"><!--Войти--></span>
+                </button>
+            </li>
+            </ul>
+</nav>                    </div>
+                </div>
+            </div>
+            <div class="frame-search-cleaner">
+                <!--                Start. Include cart data template-->
+                <div id="tinyBask" class="frame-cleaner">
+                    
+    <div class="btn-bask" style="height: 29px;">
+      
+            
+            <span class="text-cleaner">
+                <span class="text-el">
+				
+				<a href=/?page=cart style="display: block; color: white; text-decoration: none; padding: 7px">
+				
+				<span class="icon_cleaner"></span>
+				Корзина пуста</a></span>
+            </span>
+       
+    </div>
+                </div>
+                <!--                    End. Include cart data template-->
+                <!--                Start. Show search form-->
+                <div class="frame-search-form">
+                    <div class="p_r">
+                         <form action="/?page=search" method="get">
+					   <input type="hidden" name="page" value="search">
+                            <span class="btn-search">
+                                <button type="submit"><span class="text-el">Поиск</span></button>
+                            </span>
+                            <div class="frame-search-input">
+                                <span class="icon_search"></span>
+                                <input type="text" class="input-search" name="keyword" autocomplete="off"  placeholder="Я ищу"/>
+                                <div id="suggestions" class="drop drop-search"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--                End. Show search form-->
+            </div>
+        </div>
+    </div>
+</div>
+                    </header>                    <div class="frame-menu-main horizontal-menu">
+                        <!--    menu-row-category || menu-col-category-->
+    <div class="menu-main not-js menu-row-category">
+
+  <nav>
+    <table>
+      <tbody>
+        <tr>		
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title "><a href="#" class="title active"><span class="helper"></span><span><span class="text-el">Электроника</span></span></a></div>
+		
+		<div class="frame-drop-menu">
+		  <ul class="items">			
+		     
+			 
+			 <li class="column_0">
+			    <a href="/products.php?category=katalog_1&id=663" title="1" class="title-category-l1 ">
+				   <span class="helper"></span>
+                   <span class="text-el">Портативные зарядные устройства</span>
+				</a>
+	        </li>
+					 </ul>
+       </div>
+</td>		
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title "><a href="#" class="title active"><span class="helper"></span><span><span class="text-el">Чехлы</span></span></a></div>
+		
+		<div class="frame-drop-menu">
+		  <ul class="items">		 </ul>
+       </div>
+</td>
+
+
+
+		<!-- old menu
+          <td>
+    <div class="frame-item-menu active">
+        <div class="frame-title is-sub"><a href="/" class="title active"><span class="helper"></span><span><span class="text-el">Каталог<span class="icon-arrow-d-menu"></span></span></span></a></div>
+		
+<div class="frame-drop-menu">
+    <ul class="items">   
+   <li class="column_0">
+    <a href="#" title="Электроника" class="title-category-l1  is-sub">
+        <span class="helper"></span>
+        <span class="text-el">Электроника</span>
+    </a>
+	
+    <div class="frame-l2"><ul class="items"><li class="column2_0"><a href="/products.php?category=katalog_1&id=663" title="Портативные зарядные устройства">Портативные зарядные устройства</a></li></ul></div></li>
+
+
+   
+   <li class="column_0">
+    <a href="#" title="Чехлы" class="title-category-l1  ">
+        <span class="helper"></span>
+        <span class="text-el">Чехлы</span>
+    </a>
+	
+    </li>
+
+
+
+ 
+ 
+ 
+ </ul>
+
+
+
+
+
+
+</div>    </div>
+</td>
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title"><a href="/?page=125" class="title active"><span class="helper"></span><span><span class="text-el">О компании</span></span></a></div>    </div>
+</td>
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title"><a href="/?page=123" class="title active"><span class="helper"></span><span><span class="text-el">Контакты</span></span></a></div>    </div>
+</td>
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title"><a href="/?page=700" class="title active"><span class="helper"></span><span><span class="text-el">Главная</span></span></a></div>    </div>
+</td>
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title"><a href="/?page=696" class="title active"><span class="helper"></span><span><span class="text-el">Партнеры</span></span></a></div>    </div>
+</td>
+<td>
+    <div class="frame-item-menu">
+        <div class="frame-title"><a href="/?page=697" class="title active"><span class="helper"></span><span><span class="text-el">Доставка и оплата</span></span></a></div>    </div>
+</td>
+-->
+</tr>
+
+
+    </tbody>
+ </table>
+</nav></div>                    </div>
+                </div>
+                <div class="content">
+                    
+<!--Start. Make bread crumbs -->
+<div class="frame-crumbs">
+    <div class="crumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+    <div class="container">
+
+
+	<ul class="items items-crumbs">
+ 
+    
+             
+	<li class="btn-crumb"><a href='/' typeof="v:Breadcrumb"><span class="text-el">Главная</span><span class="divider">&#9658;</span></a></li><li class="btn-crumb"><a href='#' typeof="v:Breadcrumb"><span class="text-el">Электроника</span><span class="divider">&#9658;</span></a></li><li class="btn-crumb"><a href='/products.php?category=katalog_1&id=663' typeof="v:Breadcrumb"><span class="text-el">Портативные зарядные устройства</span><span class="divider">&#9658;</span></a></li>                    </ul>
+
+
+
+
+
+    </div>
+</div></div>
+<!--End. Make bread crumbs -->
+<div class="frame-inside page-category">
+    <div class="container">
+        <div class="right-catalog">
+            <!-- Start. Category name and count products in category-->
+            <div class="f-s_0 title-category">
+                <div class="frame-title">
+                    <h1 class="title">Портативные зарядные устройства</h1>
+                </div>
+				                <span class="count">Найдено товаров 7</span>            </div>
+            <!-- End. Category name and count products in category-->
+                        <!--Start. Banners block-->
+            
+            <!--End. Banners-->
+               
+         
+		  
+		   <div class="frame-header-category">
+        <div class="header-category f-s_0">
+            <div class="inside-padd clearfix">
+                <!-- Start. Order by block -->
+                <div class="frame-sort f_l">
+                    <span class="title s-t f_l">Сортировать:</span>
+                    <ul class="nav-sort nav f_l" id="sort" name="order">
+                                                                         
+                                                        <li>
+                                <a href="/products.php?category=katalog_1&id=663&sort=price" class="d_l_3">От дешевых к дорогим</a>
+                                </li>
+                                                        <li>
+                                <a href="/products.php?category=katalog_1&id=663&sort=price-desc" class="d_l_3">От дорогих к дешевым</a>
+                                </li>
+                                                        <!--<li>
+                                <button type="button" data-value="hit" class="d_l_3">Популярные</button>
+                                </li>
+                                                        <li>
+                                <button type="button" data-value="rating" class="d_l_3">Рейтинг</button>
+                                </li>
+                                                        <li>
+                                <button type="button" data-value="hot" class="d_l_3">Новинки</button>
+                                </li>-->
+                                                </ul>
+                </div>
+             
+            </div>
+    
+        </div>
+    </div>
+
+
+<form style="display:none" method="post" name="qua" action="/products.php?category=katalog_1&id=663">
+	<input type="hidden" name="quantity2" id="quantity2">
+	<input type="hidden" name="incart2" id="incart2">
+	<input type="hidden" name="price2" id="price2">
+
+	<input type="submit">
+</form>
+<!--
+<div class="izo-zoom">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  <img src="/downloads/none.jpg" />
+  <img src="/downloads/none.jpg" />
+</div>
+-->
+
+<table class="price_price" width=100%>
+	<tbody>
+		<tr>
+			<td  colspan="9">Прайс-лист на портативные зарядные устройства</td>
+		</tr>
+		<tr>
+			<td  rowspan="2"></td>
+			<td  rowspan="2">Наименование</td>
+			<td  rowspan="2">Удельный вес</td>
+			<td  rowspan="2" >Длина</td>
+			<td  rowspan="2">Цвет</td>
+			<td  rowspan="2">Кол-во</td>
+		  	<td  colspan="2">Цена, Руб.</td>
+			<td  rowspan="2">Купить</td>
+		</tr>
+
+				
+				
+									
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_5').style.display='block';" onMouseOut="document.getElementById('uvel_5').style.display='none';" style="background-image: url('/downloads/1516456126.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=5" style="text-decoration: none;"><!--<img src="/downloads/1516456126.jpg"  width="30"  />-->Solar Power Bank с солнечной батареей, 35 000 mAh</a>
+
+
+		<div id="uvel_5" class="imgCatalogLine" align=left><img src='/downloads/1516456126.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_5" value="1200">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_5" id="pquantity_663_5" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_5").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_5');
+
+		var kol = document.getElementById('cuprice_663_5').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_5').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_5').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_5">1200</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='5'; document.qua.quantity2.value=document.getElementById('pquantity_663_5').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=5" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_21').style.display='block';" onMouseOut="document.getElementById('uvel_21').style.display='none';" style="background-image: url('/downloads/1516464099.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=21" style="text-decoration: none;"><!--<img src="/downloads/1516464099.jpg"  width="30"  />-->Power Bank 12000 mAh на солнечных батареях</a>
+
+
+		<div id="uvel_21" class="imgCatalogLine" align=left><img src='/downloads/1516464099.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_21" value="830">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_21" id="pquantity_663_21" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_21").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_21');
+
+		var kol = document.getElementById('cuprice_663_21').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_21').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_21').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_21">830</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='21'; document.qua.quantity2.value=document.getElementById('pquantity_663_21').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=21" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_22').style.display='block';" onMouseOut="document.getElementById('uvel_22').style.display='none';" style="background-image: url('/downloads/1516710798.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=22" style="text-decoration: none;"><!--<img src="/downloads/1516710798.jpg"  width="30"  />-->Xiaomi Mi Power Bank 10400</a>
+
+
+		<div id="uvel_22" class="imgCatalogLine" align=left><img src='/downloads/1516710798.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_22" value="1100">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_22" id="pquantity_663_22" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_22").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_22');
+
+		var kol = document.getElementById('cuprice_663_22').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_22').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_22').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_22">1100</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='22'; document.qua.quantity2.value=document.getElementById('pquantity_663_22').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=22" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_23').style.display='block';" onMouseOut="document.getElementById('uvel_23').style.display='none';" style="background-image: url('/downloads/1516713805.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=23" style="text-decoration: none;"><!--<img src="/downloads/1516713805.jpg"  width="30"  />-->Xiaomi Mi Power Bank 20000</a>
+
+
+		<div id="uvel_23" class="imgCatalogLine" align=left><img src='/downloads/1516713805.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_23" value="1500">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_23" id="pquantity_663_23" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_23").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_23');
+
+		var kol = document.getElementById('cuprice_663_23').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_23').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_23').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_23">1500</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='23'; document.qua.quantity2.value=document.getElementById('pquantity_663_23').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=23" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_24').style.display='block';" onMouseOut="document.getElementById('uvel_24').style.display='none';" style="background-image: url('/downloads/1516795823.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=24" style="text-decoration: none;"><!--<img src="/downloads/1516795823.jpg"  width="30"  />-->Xiaomi Mi Power Bank 5000</a>
+
+
+		<div id="uvel_24" class="imgCatalogLine" align=left><img src='/downloads/1516795823.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_24" value="750">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_24" id="pquantity_663_24" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_24").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_24');
+
+		var kol = document.getElementById('cuprice_663_24').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_24').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_24').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_24">750</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='24'; document.qua.quantity2.value=document.getElementById('pquantity_663_24').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=24" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_26').style.display='block';" onMouseOut="document.getElementById('uvel_26').style.display='none';" style="background-image: url('/downloads/1516978862.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=26" style="text-decoration: none;"><!--<img src="/downloads/1516978862.jpg"  width="30"  />-->Xiaomi Mi Power Bank 10000</a>
+
+
+		<div id="uvel_26" class="imgCatalogLine" align=left><img src='/downloads/1516978862.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_26" value="850">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_26" id="pquantity_663_26" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_26").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_26');
+
+		var kol = document.getElementById('cuprice_663_26').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_26').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_26').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_26">850</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='26'; document.qua.quantity2.value=document.getElementById('pquantity_663_26').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=26" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+				
+		<tr>
+		  <tr>
+		  <td onMouseOver="document.getElementById('uvel_25').style.display='block';" onMouseOut="document.getElementById('uvel_25').style.display='none';" style="background-image: url('/downloads/1516798831.jpg'); background-size: contain; background-position: center; background-repeat:no-repeat; width: 50px; height: 50px;">
+
+
+
+
+
+</td>
+		
+
+    <td  width=400 style="text-align: left;"><a href="/products.php?category=katalog_1&id=663&cid=25" style="text-decoration: none;"><!--<img src="/downloads/1516798831.jpg"  width="30"  />-->Xiaomi Mi Power Bank 2 10000</a>
+
+
+		<div id="uvel_25" class="imgCatalogLine" align=left><img src='/downloads/1516798831.jpg'></div>
+
+</td>
+    <td >-</td>
+    <td>-</td>
+    
+	<td>-</td>
+
+
+
+
+  
+
+<input type="hidden" id="cuprice_663_25" value="1000">
+
+	<td><input type="number" step="1" min="1" max="9999999" name="pquantity_663_25" id="pquantity_663_25" value="1" title="Кол-во" style="width: 30px;" /></td>
+	
+		
+
+	<script>
+$("#pquantity_663_25").bind('keyup mouseup', 
+		
+	function () {var skidka1 = 30000;var skidka1_proc = 2;skidka2 = 60000;var skidka2_proc = 5;
+		var summa2;
+
+		var summa3;
+
+		var proc;
+
+		var res = document.getElementById('price_663_25');
+
+		var kol = document.getElementById('cuprice_663_25').value
+
+		var summa = $(this).val()*kol;
+
+		var price_const = document.getElementById('cuprice_663_25').value;
+	
+
+		if (summa>skidka1)
+		{
+			
+
+			var price_const_proc = (price_const*skidka1_proc)/100;
+
+           document.qua.price2.value = price_const - price_const_proc;
+
+
+			proc = skidka1_proc;
+
+			summa2 = summa - (summa*skidka1_proc)/100;
+
+			
+			if (summa>skidka2)
+			{
+				var price2_2 = document.getElementById('cuprice_663_25').value;
+
+			    var price2_2_proc = (price_const*skidka2_proc)/100;
+
+                document.qua.price2.value = price2_2 - price2_2_proc;
+
+				proc = skidka2_proc;
+
+				summa2 =  summa - (summa*skidka2_proc)/100;	 
+			}
+			
+
+
+
+
+
+
+
+
+
+		
+			summa3 = '<s>' + summa + '</s>&nbsp;&nbsp;' + '<font color=red>' + summa2 + '</font><br>(' + proc + '%&nbsp;скидка!)';
+		}
+		else
+			summa3 = summa;
+			
+		
+		
+		res.innerHTML=summa3; 
+		// document.qua.submit();
+});
+</script>  <td colspan="2" id="price_663_25">1000</td>
+	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onClick="document.qua.incart2.value='25'; document.qua.quantity2.value=document.getElementById('pquantity_663_25').value; document.qua.submit();" /></div>
+	
+
+  </td>
+  </tr>
+
+
+	
+<!--<a rel="nofollow" href="/products.php?category=katalog_1&id=663&incart=25" data-quantity="1" data-product_id="280668" data-product_sku="FS-RAG-10LB-TAN" class="button product_type_simple add_to_cart_button">Add to cart</a>-->
+
+
+				
+	</tbody>
+</table>
+				
+<!--
+
+			<nav class="woocommerce-pagination">
+	<ul class='page-numbers'><li><span class='page-numbers current'>1</span></li></ul>
+</nav>
+-->                    
+
+            
+
+                <!-- render pagination-->
+                                        <!-- End.If count products in category > 0 then show products and pagination links -->
+        </div>
+
+
+
+        
+      
+    </div>
+</div>
+    <!--<div class="frame-seo-text">
+        <div class="container">
+            frame-seo-text        
+      </div>
+        </div>-->
+    </div>
+<!--Start. Popular products -->
+<!--End. Popular products -->
+<script type="text/javascript" src="/templates/toolsMarket/js/cusel-min-2.5.js"></script>                </div>
+                <div class="h-footer"></div>
+            </div>
+        </div>
+        <footer class="main-wrap">
+            <div class="frame-seotext-news">  
+    <div class="frame-benefits">
+        <div class="container">
+<ul class="items items-benefits">
+<li>
+<div class="frame-icon-benefit"><span class="helper">&nbsp;</span> <span class="icon-benefits_1">&nbsp;</span></div>
+<div class="frame-description-benefit f-s_0"><span class="helper">&nbsp;</span>
+<div>
+<div class="title">Быстрая доставка</div>
+<p>Бесплатно по Москве</p>
+</div>
+</div>
+</li>
+<li>
+<div class="frame-icon-benefit"><span class="helper">&nbsp;</span> <span class="icon-benefits_2">&nbsp;</span></div>
+<div class="frame-description-benefit f-s_0"><span class="helper">&nbsp;</span>
+<div>
+<div class="title">Гибкая система скидок</div>
+<p>Для постоянных покупателей</p>
+</div>
+</div>
+</li>
+<li>
+<div class="frame-icon-benefit"><span class="helper">&nbsp;</span> <span class="icon-benefits_3">&nbsp;</span></div>
+<div class="frame-description-benefit f-s_0"><span class="helper">&nbsp;</span>
+<div>
+<div class="title">Полезная консультация</div>
+<p>Выбор оптимальных решений</p>
+</div>
+</div>
+</li>
+<li>
+<div class="frame-icon-benefit"><span class="helper">&nbsp;</span> <span class="icon-benefits_4">&nbsp;</span></div>
+<div class="frame-description-benefit f-s_0"><span class="helper">&nbsp;</span>
+<div>
+<div class="title">Качественный сервис</div>
+<p>Быстрая обработка заказа</p>
+</div>
+</div>
+</li>
+</ul>
+</div>    </div>
+    <div class="frame-seo-text">
+        <div class="container">
+            <div class="text seo-text"></div>
+        </div>
+    </div>
+</div>
+<div class="content-footer">
+    <div class="container">
+        <!--Start. Load menu in footer-->
+        <div class="box-1">
+            <div class="inside-padd">
+                <div class="c_w">© MyVirtualShop.ru</div>
+                <div class="text-el">Все права защищены</div>
+          </div>
+      </div>
+      <div class="box-2">
+        <div class="inside-padd">
+            <div class="main-title">Каталог</div>
+            <ul class="footer-category-menu nav nav-vertical">
+                SELECT * FROM ma_pages WHERE publ!='1' AND topics='ukatalog' AND L1='' ORDER BY sort ASC LIMIT 0,6				<li><a href="#" title="Электроника" class="title">Электроника</a></li>
+					<li><a href="#" title="Чехлы" class="title">Чехлы</a></li>
+	
+      </ul>
+        </div>
+    </div>
+    <!--End. Load menu in footer-->
+
+    <!--Start. User menu-->
+    <div class="box-3">
+        <div class="inside-padd">
+            <div class="main-title">Информация</div>
+            <ul class="nav nav-vertical">
+                
+<li><a href="#" title="Про наш магазин">Про наш магазин</a></li>
+
+<li><a href="#" title="Гарантии">Гарантии</a></li>
+
+<li><a href="#" title="Возврат товара">Возврат товара</a></li>
+
+<li><a href="#" title="Бренды">Бренды</a></li>
+
+<li><a href="#" title="Доставка и оплата">Доставка и оплата</a></li>
+
+<li><a href="#" title="Контакты">Контакты</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <!--End. User menu-->
+
+    <!--Start. Info block-->
+    <div class="box-4">
+        <div class="inside-padd">
+            <div class="main-title">Контакты</div>
+            <ul>
+                <li>
+                    <a class="f-s_0" href="mailto:levendeevp@gmail.com">
+                        <span class="icon_mail"></span>
+                        <span class="text-el">levendeevp@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="f-s_0" href="skype:petrleven2">
+                        <span class="icon_skype"></span>
+                        <span class="text-el">petrleven2</span>
+                    </a>
+                </li>
+                <li class="f-s_0">
+                    <span class="icon_address"></span>
+                    <span class="c_w">ул. Мира, 85, офис 305</span>
+                </li>
+                <li class="f-s_0">
+                    <span class="icon_time_work"></span>
+                    <span class="c_w">Пн-Сб с 8:00 до 21:00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--End. Info block-->
+
+    <div class="box-5">
+        <div class="inside-padd">
+            <div class="f-s_0">
+                <span class="icon_phone_footer"></span>
+                <span class="text-el"></span>
+            </div>
+
+            <div class="engine"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+        </footer>        <div class="frame-user-toolbar active">
+    <div class="container inside-padd">
+                <div class="content-user-toolbar">
+            <ul class="items items-user-toolbar" >
+                
+              
+              
+              
+            </ul>
+        </div>
+        <div class="btn-to-up">
+            <button type="button">
+                <span class="icon_arrow_p icon_arrow_p2"></span>
+                <span class="text-el ref t-d_n">Наверх</span>
+            </button>
+        </div>
+    </div>
+  
+</div>
+                                
+        
+                        
+        <script type="text/javascript">
+            initDownloadScripts(['united_scripts'], 'init', 'scriptDefer');
+        </script>
+
+ 
+
+
+           
+       </body></html>

@@ -158,13 +158,8 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
       <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $title; ?>" />
-        <meta name = "format-detection" content = "telephone=no" />
-        <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
-	
-
-		
-        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/colorscheme.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/color.css" media="all" />
+        
+        <?php include("metaLinks.php"); ?>
 
                      
                         <script type="text/javascript">
@@ -214,76 +209,7 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
         text.plurComments = ['отзыв', 'отзыва', 'отзывов'];
 </script>
         <script type="text/javascript" src="/templates/toolsMarket/js/settings.js"></script>
-        <!--[if lte IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/lte_ie_8.css" /><![endif]-->
-        <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/ie_7.css" />
-            <script src="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/js/localStorageJSON.js"></script>
-        <![endif]-->
-
-        <link rel="icon" href="/uploads/images/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/uploads/images/favicon.ico" type="image/x-icon" />
-    <link data-arr="8" rel="stylesheet" type="text/css" href="/templates/toolsMarket/star_rating/css/style.css" />
-
-
-<style>
-.izo-zoom {
-  position: relative;
-  overflow: hidden;
-  height: 300px;
-}
-
-.izo-zoom img:nth-of-type(1) {
-  z-index: 2;
-  max-height: 100%;
-  width: 200px;
-  position: relative;
-  box-shadow: -295px 0 0 300px #fff;
-}
-
-.izo-zoom span {
-  border-bottom: 30px solid rgba(0, 0, 0, 0);
-  z-index: 3;
-  width: 100px;
-  position: absolute; left: 0px; top: 0px;
-  cursor: zoom-in;
-}
-.izo-zoom span:nth-child(even) {left: 100px;}
-.izo-zoom span:nth-of-type(3), .izo-zoom span:nth-of-type(4) {top: 10%;}
-.izo-zoom span:nth-of-type(5), .izo-zoom span:nth-of-type(6) {top: 20%;}
-.izo-zoom span:nth-of-type(7), .izo-zoom span:nth-of-type(8) {top: 30%;}
-.izo-zoom span:nth-of-type(9), .izo-zoom span:nth-of-type(10) {top: 40%;}
-.izo-zoom span:nth-of-type(11), .izo-zoom span:nth-of-type(12) {top: 50%;}
-.izo-zoom span:nth-of-type(13), .izo-zoom span:nth-of-type(14) {top: 60%;}
-.izo-zoom span:nth-of-type(15), .izo-zoom span:nth-of-type(16) {top: 70%;}
-.izo-zoom span:nth-of-type(17), .izo-zoom span:nth-of-type(18) {top: 80%;}
-.izo-zoom span:nth-of-type(19), .izo-zoom span:nth-of-type(20) {top: 90%;}
-
-.izo-zoom img:nth-of-type(2) {
-  z-index: -1;
-  height: 0px;
-  width: 0px;
-  position: absolute; left: 205px; top: 0;
-  transition: 1s; -webkit-transition: 1s; -o-transition: 1s;
-}
-.izo-zoom span:hover ~ img:nth-of-type(2) {z-index: 1; height: auto; width: 100%;}
-.izo-zoom span:nth-child(even):hover ~ img:nth-of-type(2) {left: 5px;} 
-.izo-zoom span:nth-of-type(3):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(4):hover ~ img:nth-of-type(2) {top: -40%;} 
-.izo-zoom span:nth-of-type(5):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(6):hover ~ img:nth-of-type(2) {top: -80%;} 
-.izo-zoom span:nth-of-type(7):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(8):hover ~ img:nth-of-type(2) {top: -120%;} 
-.izo-zoom span:nth-of-type(9):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(10):hover ~ img:nth-of-type(2) {top: -160%;} 
-.izo-zoom span:nth-of-type(11):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(12):hover ~ img:nth-of-type(2) {top: -200%;} 
-.izo-zoom span:nth-of-type(13):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(14):hover ~ img:nth-of-type(2) {top: -240%;} 
-.izo-zoom span:nth-of-type(15):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(16):hover ~ img:nth-of-type(2) {top: -280%;} 
-.izo-zoom span:nth-of-type(17):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(18):hover ~ img:nth-of-type(2) {top: -320%;} 
-.izo-zoom span:nth-of-type(19):hover ~ img:nth-of-type(2), .izo-zoom span:nth-of-type(20):hover ~ img:nth-of-type(2) {top: -360%;} 
-
-@media (max-width: 470px) {
-  .izo-zoom img:nth-of-type(1) {width: 100%; box-shadow: none;}
-  .izo-zoom span {display: none;}
-  .izo-zoom {height: auto;}
-}
-</style>
+ 
 
 </head>
 
@@ -310,13 +236,12 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
 ?>
 </div>                    </div>
                 </div>
+				
                 <div class="content">
                     
 <!--Start. Make bread crumbs -->
 <div class="frame-crumbs">
     <div class="crumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-    <div class="container">
-
 
 	<ul class="items items-crumbs">
  
@@ -337,16 +262,11 @@ if (isset($_GET["id"]) && $_GET["id"]!=="") echo "<li class=\"btn-crumb\"><a hre
 ?>
                     </ul>
 
-
-
-
-
-    </div>
 </div></div>
 <!--End. Make bread crumbs -->
-<div class="frame-inside page-category">
-    <div class="container">
-        <div class="right-catalog">
+
+    <div class="container-fluid">
+       
             <!-- Start. Category name and count products in category-->
             <div class="f-s_0 title-category">
                 <div class="frame-title">
@@ -478,14 +398,14 @@ else
 
                 <!-- render pagination-->
                                         <!-- End.If count products in category > 0 then show products and pagination links -->
-        </div>
+      
 
 
 
         
       
     </div>
-</div>
+
     <!--<div class="frame-seo-text">
         <div class="container">
             frame-seo-text        
@@ -497,27 +417,9 @@ else
 <script type="text/javascript" src="/templates/toolsMarket/js/cusel-min-2.5.js"></script>                </div>
                 <div class="h-footer"></div>
             </div>
-        </div>
+        
       <?php include ("footer.php"); ?>
-        <div class="frame-user-toolbar active">
-    <div class="container inside-padd">
-                <div class="content-user-toolbar">
-            <ul class="items items-user-toolbar" >
-                
-              
-              
-              
-            </ul>
-        </div>
-        <div class="btn-to-up">
-            <button type="button">
-                <span class="icon_arrow_p icon_arrow_p2"></span>
-                <span class="text-el ref t-d_n">Наверх</span>
-            </button>
-        </div>
-    </div>
-  
-</div>
+
                                 
         
                         

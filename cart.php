@@ -133,5 +133,5 @@ $totalprice[]= $main->CartPrice($rows["id1"],$rows["id2"]);
 	<br><div align=right>
 	
 	
-	<div class="btn-buy-p btn-buy">
-	<INPUT TYPE="button" class=box2  onClick="location.href='/?page=sendform'" value="ќформить заказ"></div>&nbsp;&nbsp;&nbsp;&nbsp;<div class="btn-buy-p btn-buy"><INPUT TYPE="submit" class=box2  value="ѕересчитать" class="formbox"></div></div></FORM><?php } ?>
+	
+	<INPUT TYPE="button" class="btn btn-secondary" onClick="location.href='/?page=sendform'" value="ќформить заказ">&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="submit" class="btn btn-secondary" value="ѕересчитать" class="formbox"></div></FORM><?php } ?>

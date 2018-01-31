@@ -127,7 +127,7 @@ button:hover .icon_remove_filter, .icon_remove_filter:hover, .icon_times_cart:ho
 /*/icons*/
 
 /*links*/
-a, .ref{text-decoration: underline;}
+a, .ref{text-decoration: none;}
 .ref-2{text-decoration: none;cursor: pointer;}
 /*/links*/
 

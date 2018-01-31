@@ -205,11 +205,10 @@ $totalprice[]= $main->CartPrice ($rows["id1"],$rows["id2"]);
 <TEXTAREA NAME="comments" ROWS="3" COLS="43"></TEXTAREA><br>
 
 
-     <br><div class="btn-buy-p btn-buy"><INPUT TYPE="button" class="box2" onclick="if (document.add.person.value=='' || document.add.phone.value=='')  window.alert('ФИО и телефон обязательны для заполнения!'); else add.submit();" value="Оформить заказ">&nbsp; </div>&nbsp;&nbsp;&nbsp;&nbsp;
-	 <div class="btn-buy-p btn-buy">
-	
-	 <INPUT TYPE="button" onclick="add.reset();" class="box2" value="Очистить">
-	 </div>
+     <br><INPUT TYPE="button" class="btn btn-secondary" onclick="if (document.add.person.value=='' || document.add.phone.value=='')  window.alert('ФИО и телефон обязательны для заполнения!'); else add.submit();" value="Оформить заказ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 
+	 <INPUT TYPE="button" onclick="add.reset();" class="btn btn-secondary" value="Очистить">
+	 
 	 
 	 
 

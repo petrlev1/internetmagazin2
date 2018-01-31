@@ -33,7 +33,7 @@ $catalog = "catalog_".$_GET["id"];
 
 ?>
 
-<div itemscope itemtype="http://schema.org/Product" id="product-50285" class="post-50285 product type-product status-publish has-post-thumbnail product_cat-festool-abrasives shipping-taxable purchasable product-type-simple product-cat-festool-abrasives instock">
+
 
 	<div class="images"><img src="<?php echo $img; ?>" border=0 width=300>
 	</div><br>
@@ -62,19 +62,7 @@ $catalog = "catalog_".$_GET["id"];
 
 
 
-	<!--
-	<form class="cart" method="post" enctype='multipart/form-data'>
-	 	
-	 	<div class="quantity">
-	<input type="number" step="1" min="1" max="2" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" />
-</div>
-
-	 	<input type="hidden" name="add-to-cart" value="50285" />
-
-	 	<button type="submit" class="single_add_to_cart_button button alt">Add to cart</button>
-
-			</form>
-			--><script>
+<script>
 			
 			function checkform()
 			{
@@ -93,7 +81,7 @@ $catalog = "catalog_".$_GET["id"];
 
 
 
-	   &nbsp;&nbsp;&nbsp;<div class="btn-buy-p btn-buy"><input type="submit" value="Добавить в корзину"></div>
+	   &nbsp;&nbsp;&nbsp;<input type="submit" class="btn btn-secondary" value="Добавить в корзину">
 
 
 </form>
@@ -108,15 +96,10 @@ $catalog = "catalog_".$_GET["id"];
 
 	
 
-</div><!-- #product-50285 -->
-<br>
-<div class="f-s_0">
+<!-- #product-50285 -->
 
+<div class="productText">
 
-    <div class="frame-tabs-ref frame-tabs-product">
-        <div id="view">
-
-<br>
 <?php 
 
 $sql_q = "SELECT * FROM catalog_".$_GET["id"]." WHERE id=".$_GET["cid"];
@@ -126,23 +109,10 @@ $rows = mysql_fetch_array($sql_res);
 print $rows["cat_desc"];
 
 ?>
-		<!--
-                     <br><br>
-                <div class="title-h2">Свойства</div>
-           
-           
-						
-						<table border="0" cellpadding="4" cellspacing="0" class="characteristic">
-<tbody>
-<tr>
-<td>Мощность</td><td>3900 л/час</td></tr>
-<tr>
-<td>Вес, (кг)</td><td>16.5</td></tr>
-</tbody>
-</table>                 
-                   -->
+
+</div>
+		
 
 			            
 
-</div>
-			</div></div>
+			

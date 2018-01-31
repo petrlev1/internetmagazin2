@@ -61,9 +61,9 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 		<tr>
 			<td  rowspan="2"></td>
 			<td  rowspan="2">Наименование</td>
-			<td  rowspan="2">Удельный вес</td>
-			<td  rowspan="2" >Длина</td>
-			<td  rowspan="2">Цвет</td>
+			
+			
+			
 			<td  rowspan="2">Кол-во</td>
 		  	<td  colspan="2">Цена, Руб.</td>
 			<td  rowspan="2">Купить</td>
@@ -172,10 +172,10 @@ $sql_q2 = "SELECT * FROM $catalog_table WHERE publ!='1' $sql_filtr $sort";
 		<div id="uvel_<?php echo $rows2["id"]; ?>" class="imgCatalogLine" align=left><?php echo "<img src='$img'>"; ?></div>
 
 </td>
-    <td ><?php if (empty($rows2["cat_reserve"])) echo "-"; else echo $rows2["cat_reserve"]; ?></td>
-    <td><?php if (empty($rows2["cat_sizes"])) echo "-"; else echo $rows2["cat_sizes"]; ?></td>
     
-	<td><?php if (empty($rows2["cat_colors"])) echo "-"; else echo $rows2["cat_colors"]; ?></td>
+    
+    
+	
 
 
 <?php 
@@ -428,7 +428,7 @@ if (summa>skidka2)
 });
 </script><?php } ?>
   <td colspan="2" id="price_<?php echo $_GET["id"] ?>_<?php echo $rows2["id"]; ?>"><?php echo str_replace(" ","&nbsp;",$rows2["cat_price"]); ?></td>
-	<td><div class="btn-buy-p btn-buy"><input type="button" name="submit" value="В корзину" class="submit" title="В корзину" onclick="document.qua.incart2.value='<?php echo $rows2["id"]; ?>'; document.qua.quantity2.value=document.getElementById('pquantity_<?php echo $_GET["id"] ?>_<?php echo $rows2["id"]; ?>').value; document.qua.submit();" /></div>
+	<td><input type="button" name="submit" value="В корзину" class="btn btn-success" title="В корзину" onclick="document.qua.incart2.value='<?php echo $rows2["id"]; ?>'; document.qua.quantity2.value=document.getElementById('pquantity_<?php echo $_GET["id"] ?>_<?php echo $rows2["id"]; ?>').value; document.qua.submit();" />
 	
 
   </td>

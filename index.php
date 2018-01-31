@@ -12,7 +12,7 @@ $main = new main();
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        
         <title><?php
 
 if (isset($_GET["page"]) && $_GET["page"]!=="")
@@ -52,11 +52,10 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
 
 } else print $main->get_record($main->pre."pages",125,"pages_name"); ?></title>
+
         <meta name="description" content="Интернет-магазин - My Virtual Shop" />
-        <meta name = "format-detection" content = "telephone=no" />
-         <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/colorscheme.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="/templates/toolsMarket/css/color_scheme_1/color.css" media="all" />
+        
+        <?php include("metaLinks.php"); ?>
 
                      
                         <script type="text/javascript">
@@ -113,9 +112,9 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
             <script src="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/js/localStorageJSON.js"></script>
         <![endif]-->
 
-        <link rel="icon" href="/uploads/images/favicon.ico" type="image/x-icon" />
-        <link rel="shortcut icon" href="/uploads/images/favicon.ico" type="image/x-icon" />
+
     <link data-arr="6" rel="stylesheet" type="text/css" href="/templates/toolsMarket/star_rating/css/style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
     <body class="isChrome not-js main"> 
@@ -146,7 +145,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
                     <div class="page-main">
 
 
-    <div class="container">
+
 
 
 
@@ -293,7 +292,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
               
         </div>
         
-    </div>
+   
 </div>                </div>
                 <div class="h-footer"></div>
             </div>
