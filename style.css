@@ -30,7 +30,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 
 article, .special-proposition .title-proposition-h{margin: 0 auto;clear: both;}
 .big-container{margin: 0 auto;}
-.main-body .content{position: relative; padding: 0 2%; z-index: 1;}
+.main-body .content{position: relative; padding: 0 2% 25px 2%; z-index: 1;}
 .main-body > .vertical-layout .content{position: relative;z-index: 1;}
 .frame-inside{position: relative;z-index: 1;padding-bottom: 50px;}
 .frame-inside .no-empty{display: block;}
@@ -1269,6 +1269,8 @@ background-color: #F7F7F7;
 }
 
 /*---*/
+
+a:hover { text-decoration: none }
 
 .productText { margin: 10px 0 0 0 }
 
