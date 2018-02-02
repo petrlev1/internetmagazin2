@@ -1274,12 +1274,24 @@ a:hover { text-decoration: none }
 
 .mainContent { padding: 10px 0; }
 
+
+.mainLinks { min-height: 500px; }
+.mainLinks a { display: inline-block; float: left; font-size: 24px; width: 220px; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-color: #f0f0f0; }
+
 .productText { margin: 10px 0 0 0 }
 
 .searchForm { display: inline-block }
 
 .frame-search-cleaner { display: inline-block }
 
-.header-left-content-header nav { margin-bottom: 10px; }
 
 
+
+@media (max-width: 768px) {
+
+.frame-benefits { display: none }
+.header-left-content-header nav { margin: 0 0 10px 0; }
+    
+    .mainLinks a { float: none; display: block; width: 100%; height: auto }
+    
+}

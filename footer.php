@@ -145,5 +145,5 @@ while ($rows = mysql_fetch_array($sql_res))
     </div>
 </div>
 </div>
-
+<?php include ("counter.php"); ?>
         </footer>

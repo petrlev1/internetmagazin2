@@ -115,7 +115,8 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-    <body class="isChrome not-js main"> 
+    <body class="isChrome not-js main">
+    
         <script>
     var langs = new Object();
         function lang(value) {
@@ -132,11 +133,8 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
                         <!--    menu-row-category || menu-col-category-->
     <div class="menu-main not-js menu-row-category">
  
- <?php  
-
-  include ("menu.php");
-
-?>
+ <?php include ("menu.php"); ?>
+ 
 </div>                    </div>
                 </div>
                 <div class="content">
@@ -207,7 +205,7 @@ echo "<li class=\"btn-crumb\"><button typeof=\"v:Breadcrumb\" disabled=\"disable
 
 
 
-        <div class="mainContent">
+        <div class="mainContent mainLinks">
 
             
 
@@ -288,8 +286,10 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 </div>                </div></div>
                 <div class="h-footer"></div>
             </div>
+            
         </div>
  <?php include ("footer.php"); ?>
+
  </section>
     </div>
             </div>
@@ -298,6 +298,5 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 </div>
                     
 <script type="text/javascript">initDownloadScripts(['united_scripts'], 'init', 'scriptDefer'); </script>
-
 
 </body></html>
