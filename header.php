@@ -1,6 +1,5 @@
   <header>
-   <div class="content-header">
-    
+    <div class="container-fluid">
     <div class="row">
     <div class="col-md-4">
         <!--        Logo-->
@@ -89,6 +88,5 @@ while ($rows = mysql_fetch_array($sql_res))
         </div>
     </div>
     </div>
-    
-</div>
+    </div>
                     </header>

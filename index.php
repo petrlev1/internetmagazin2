@@ -39,7 +39,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 					case "order":
 						echo "Оформление заказа";
 					break;
-
+					
 					case "search":
 						echo "Поиск";
 					break;
@@ -49,9 +49,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 			
 				}
 
-
-
-} else print $main->get_record($main->pre."pages",125,"pages_name"); ?></title>
+} else print "Интернет-магазин - My Virtual Shop" ?></title>
 
         <meta name="description" content="Интернет-магазин - My Virtual Shop" />
         
@@ -209,9 +207,9 @@ echo "<li class=\"btn-crumb\"><button typeof=\"v:Breadcrumb\" disabled=\"disable
 
 
 
-        <div class="left-start-page">
+        <div class="mainContent">
 
-            <div class="frame-baner frame-baner-start_page">
+            
 
 			<?php
 
@@ -282,32 +280,24 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
 }
 
-									?>
-
-
-
-
-</div>
-     
+									?>     
               
-        </div>
+       
         
    
-</div>                </div>
+</div>                </div></div>
                 <div class="h-footer"></div>
             </div>
         </div>
-      <?php include ("footer.php"); ?>
-        
-        </section>
+ <?php include ("footer.php"); ?>
+ </section>
     </div>
             </div>
         </div>
     </div>
 </div>
                     
-<script type="text/javascript">initDownloadScripts(['united_scripts'], 'init', 'scriptDefer'); </script>           
-<script type="text/javascript" src="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/banners/js/jquery.cycle.all.min.js"></script>
+<script type="text/javascript">initDownloadScripts(['united_scripts'], 'init', 'scriptDefer'); </script>
 
 
 </body></html>

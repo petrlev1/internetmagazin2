@@ -414,15 +414,13 @@ else
     </div>
 <!--Start. Popular products -->
 <!--End. Popular products -->
-<script type="text/javascript" src="/templates/toolsMarket/js/cusel-min-2.5.js"></script>                </div>
+</div>
                 <div class="h-footer"></div>
             </div>
         
       <?php include ("footer.php"); ?>
 
-                                
-        
-                        
+          
         <script type="text/javascript">
             initDownloadScripts(['united_scripts'], 'init', 'scriptDefer');
         </script>

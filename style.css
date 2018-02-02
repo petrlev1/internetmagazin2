@@ -245,7 +245,7 @@ p {margin-bottom: 10px;line-height: 18px;}
 .fon-header{position: relative;z-index: 3;}
 
 .content-header{padding-bottom: 13px;}
-.left-content-header{ padding-top: 5px;}
+.left-content-header{ padding: 5px 0 5px 0;}
 .header-left-content-header{ margin: 0 0 10px 0;}
 .phones-header{margin-right: 25px;display: inline-block; max-width: 276px;}
 
@@ -1272,10 +1272,14 @@ background-color: #F7F7F7;
 
 a:hover { text-decoration: none }
 
+.mainContent { padding: 10px 0; }
+
 .productText { margin: 10px 0 0 0 }
 
 .searchForm { display: inline-block }
 
 .frame-search-cleaner { display: inline-block }
+
+.header-left-content-header nav { margin-bottom: 10px; }
 
 
