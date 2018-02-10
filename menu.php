@@ -31,7 +31,7 @@
 
 ?>" class="title active"><span class="helper"></span><span><span class="text-el"><?php echo $rows["pages_name"]; ?></span></span></a></div>
 		
-		<div class="frame-drop-menu">
+		<div class="frame-drop-menu1">
 		  <ul class="items"><?php
 
 		  if ($main->CheckKatalog($cpages)=="0") {

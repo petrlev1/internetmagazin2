@@ -1276,13 +1276,22 @@ a:hover { text-decoration: none }
 
 
 .mainLinks { min-height: 500px; }
-.mainLinks a { display: inline-block; float: left; font-size: 24px; width: 220px; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-color: #f0f0f0; }
+.mainLinks a { display: inline-block; float: left; font-size: 24px; width: 24%; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-color: #f0f0f0; }
 
 .productText { margin: 10px 0 0 0 }
 
 .searchForm { display: inline-block }
 
 .frame-search-cleaner { display: inline-block }
+
+
+
+
+.frame-item-menu:hover .frame-drop-menu1 { display: block}
+.frame-drop-menu1 { display: none; position: absolute }
+.frame-drop-menu1 .items { background-color: #ffffff;  }
+.frame-drop-menu1 .items li { display: block; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.2) }
+.frame-drop-menu1 .items li:hover { background-color: #cccccc; }
 
 
 
