@@ -60,55 +60,6 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
             var locale = "";
         </script>
         <script type="text/javascript" src="/templates/toolsMarket/js/jquery-1.8.3.min.js"></script>
-        <!-- php vars to js -->
-            <script type="text/javascript">
-                    var curr = '$',
-            cartItemsProductsId = null,
-            nextCs = '',
-            nextCsCond = nextCs == '' ? false : true,
-            pricePrecision = parseInt(''),
-            checkProdStock = "", //use in plugin plus minus
-            inServerCompare = parseInt("0"),
-            inServerWishList = parseInt("0"),
-            countViewProd = parseInt("1"),
-            theme = "/templates/toolsMarket/",
-            siteUrl = "/",
-            colorScheme = "/css/color_scheme_1",
-            isLogin = "0" === '1' ? true : false,
-            typePage = "main",
-            typeMenu = "row";
-        text = {
-            search: function(text) {
-                return 'Введите более' + ' ' + text + ' символов';
-                        },
-                        error: {
-                            notLogin: 'В список желаний могут добавлять только авторизированные пользователи',
-                                        fewsize: function(text) {
-                                            return 'Выберите размер меньше или равно' + ' ' + text + ' пикселей';
-                                                        },
-                                                        enterName: 'Введите название'
-                                                                }
-                                                            }
-    
-        text.inCart = 'В корзине';
-        text.pc = 'шт.';
-        text.quant = 'Кол-во:';
-        text.sum = 'Сумма:';
-        text.toCart = 'Купить';
-        text.pcs = 'Количество:';
-        text.kits = 'Комплектов:';
-        text.captchaText = 'Код протекции';
-        text.plurProd = ['товар', 'товара', 'товаров'];
-        text.plurKits = ['набор', 'набора', 'наборов'];
-        text.plurComments = ['отзыв', 'отзыва', 'отзывов'];
-</script>
-        <script type="text/javascript" src="/templates/toolsMarket/js/settings.js"></script>
-        <!--[if lte IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-        <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/lte_ie_8.css" /><![endif]-->
-        <!--[if IE 7]>
-            <link rel="stylesheet" type="text/css" href="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/css/ie_7.css" />
-            <script src="http://toolsmarket.imagecmsdemo.net/templates/toolsMarket/js/localStorageJSON.js"></script>
-        <![endif]-->
 
 
     <link data-arr="6" rel="stylesheet" type="text/css" href="/templates/toolsMarket/star_rating/css/style.css" />
@@ -297,6 +248,5 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
     </div>
 </div>
                     
-<script type="text/javascript">initDownloadScripts(['united_scripts'], 'init', 'scriptDefer'); </script>
 
 </body></html>

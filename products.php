@@ -166,49 +166,7 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
             var locale = "";
         </script>
         <script type="text/javascript" src="/templates/toolsMarket/js/jquery-1.8.3.min.js"></script>
-        <!-- php vars to js -->
-            <script type="text/javascript">
-                    var curr = '$',
-            cartItemsProductsId = null,
-            nextCs = '',
-            nextCsCond = nextCs == '' ? false : true,
-            pricePrecision = parseInt(''),
-            checkProdStock = "", //use in plugin plus minus
-            inServerCompare = parseInt("0"),
-            inServerWishList = parseInt("0"),
-            countViewProd = parseInt("0"),
-            theme = "http://poli/templates/toolsMarket/",
-            siteUrl = "http://poli/",
-            colorScheme = "css/color_scheme_1",
-            isLogin = "0" === '1' ? true : false,
-            typePage = "shop_category",
-            typeMenu = "row";
-        text = {
-            search: function(text) {
-                return 'Введите более' + ' ' + text + ' символов';
-                        },
-                        error: {
-                            notLogin: 'В список желаний могут добавлять только авторизированные пользователи',
-                                        fewsize: function(text) {
-                                            return 'Выберите размер меньше или равно' + ' ' + text + ' пикселей';
-                                                        },
-                                                        enterName: 'Введите название'
-                                                                }
-                                                            }
-    
-        text.inCart = 'В корзине';
-        text.pc = 'шт.';
-        text.quant = 'Кол-во:';
-        text.sum = 'Сумма:';
-        text.toCart = 'Купить';
-        text.pcs = 'Количество:';
-        text.kits = 'Комплектов:';
-        text.captchaText = 'Код протекции';
-        text.plurProd = ['товар', 'товара', 'товаров'];
-        text.plurKits = ['набор', 'набора', 'наборов'];
-        text.plurComments = ['отзыв', 'отзыва', 'отзывов'];
-</script>
-        <script type="text/javascript" src="/templates/toolsMarket/js/settings.js"></script>
+        
  
 
 </head>
@@ -220,8 +178,7 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
             return  langs[value] ? langs[value] : value;
         }
     
-</script>        <script> 
- </script>        <div class="main-body">
+</script>       <div class="main-body">
             <div class="main-wrap container">
                 <div class="fon-header">
                   <?php include("header.php"); ?>
@@ -421,9 +378,7 @@ else
       <?php include ("footer.php"); ?>
 
           
-        <script type="text/javascript">
-            initDownloadScripts(['united_scripts'], 'init', 'scriptDefer');
-        </script>
+       
 
  
 
