@@ -53,8 +53,9 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
         <meta name="description" content="Интернет-магазин - My Virtual Shop" />
         
+        <?php include("counter2.php"); ?>
+        
         <?php include("metaLinks.php"); ?>
-
                      
                         <script type="text/javascript">
             var locale = "";
@@ -64,6 +65,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
     <link data-arr="6" rel="stylesheet" type="text/css" href="/templates/toolsMarket/star_rating/css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
 </head>
 
     <body class="isChrome not-js main">

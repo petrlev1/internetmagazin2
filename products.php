@@ -159,19 +159,19 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
         <title><?php echo $title; ?></title>
         <meta name="description" content="<?php echo $title; ?>" />
         
+         <?php include("counter2.php"); ?>
+        
         <?php include("metaLinks.php"); ?>
-
                      
                         <script type="text/javascript">
             var locale = "";
         </script>
         <script type="text/javascript" src="/templates/toolsMarket/js/jquery-1.8.3.min.js"></script>
-        
- 
 
 </head>
 
-    <body class="isChrome not-js shop_category"> 
+    <body class="isChrome not-js shop_category">
+    
         <script>
     var langs = new Object();
         function lang(value) {
