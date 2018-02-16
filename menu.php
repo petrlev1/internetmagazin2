@@ -43,14 +43,13 @@
 				while ($rows2 = mysql_fetch_array($sql_res2))
 				{
 
-					
-
+			
 ?>
 			
 		     
 			 
 			 <li class="column_0">
-			    <a href="<?php echo "/products.php?category=$rows[pages]&id=".$rows2["id"]; ?>" title="1" class="title-category-l1 ">
+			    <a href="<?php echo "/".$main->tech_translate($main->tolower($rows2["pages_name"]),"eng")."/".$rows2["id"].".htm"; ?>" title="1" class="title-category-l1 ">
 				   <span class="helper"></span>
                    <span class="text-el"><?php echo $rows2["pages_name"]; ?></span>
 				</a>

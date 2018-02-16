@@ -9,9 +9,17 @@ RewriteRule ^.htaccess$ - [F]
 
 
 
-RewriteRule ^odejda.htm$ /?page=odejda
-RewriteRule ^obuv.htm$ /?page=obuv
-RewriteRule ^aksessuari.htm$ /?page=aksessuari
 
-RewriteRule ^([0-9]+).htm$ /?page=$1
-RewriteRule ^([0-9]+)id([0-9]+).htm$ /?page=$1&pid=$2
+
+RewriteRule ^(.*)/([0-9]+).htm$ /products.php?category=$1&id=$2
+
+RewriteRule ^(.*)/([0-9]+)/price-desc.htm$ /products.php?category=$1&id=$2&sort=price-desc
+RewriteRule ^(.*)/([0-9]+)/price.htm$ /products.php?category=$1&id=$2&sort=price
+
+RewriteRule ^(.*)/([0-9]+)/([0-9]+).htm$ /products.php?category=$1&id=$2&cid=$3
+
+
+
+
+
+

@@ -15,10 +15,10 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
                     <ul class="nav-sort nav f_l" id="sort" name="order">
                                                                          
                                                         <li>
-                                <a href="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&sort=price" class="d_l_3">От дешевых к дорогим</a>
+                                <a href="/<?php echo $_GET["category"]; ?>/<?php echo $_GET["id"]; ?>/price.htm" class="d_l_3">От дешевых к дорогим</a>
                                 </li>
                                                         <li>
-                                <a href="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&sort=price-desc" class="d_l_3">От дорогих к дешевым</a>
+                                <a href="/<?php echo $_GET["category"]; ?>/<?php echo $_GET["id"]; ?>/price-desc.htm" class="d_l_3">От дорогих к дешевым</a>
                                 </li>
                                                         <!--<li>
                                 <button type="button" data-value="hit" class="d_l_3">Популярные</button>
@@ -162,11 +162,15 @@ $sql_q2 = "SELECT * FROM $catalog_table WHERE publ!='1' $sql_filtr $sort";
 
 
 
+<!-- 
+products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&cid=<?php echo $rows2["id"]; ?>
 
+-->
 </td>
-		
 
-    <td  width=400 style="text-align: left;"><a href="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&cid=<?php echo $rows2["id"]; ?>" style="text-decoration: none;"><!--<img src="<?php echo $img; ?>"  width="30"  />--><?php echo $rows2["cat_title"]; ?></a>
+
+
+    <td  width=400 style="text-align: left;"><a href="/<?php echo $_GET["category"]; ?>/<?php echo $_GET["id"]; ?>/<?php echo $rows2["id"]; ?>.htm" style="text-decoration: none;"><!--<img src="<?php echo $img; ?>"  width="30"  />--><?php echo $rows2["cat_title"]; ?></a>
 
 
 		<div id="uvel_<?php echo $rows2["id"]; ?>" class="imgCatalogLine" align=left><?php echo "<img src='$img'>"; ?></div>
