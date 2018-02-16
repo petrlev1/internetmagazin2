@@ -204,7 +204,7 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
  
     
              
-	<?php 
+	<?php
 
 	echo "<li class=\"btn-crumb\"><a href='/' typeof=\"v:Breadcrumb\"><span class=\"text-el\">Главная</span><span class=\"divider\">&#9658;</span></a></li>"; 
 	
@@ -213,10 +213,10 @@ $page_name = @mysql_result(mysql_query("SELECT pages_name FROM ".$main->pre."pag
 
 // echo "<li class=\"btn-crumb\"><a href='/products.php?category=".$_GET["category"]."' typeof=\"v:Breadcrumb\"><span class=\"text-el\">".$main->GetCategoryName($_GET["category"])."</span><span class=\"divider\">&#9658;</span></a></li>"; 
 
-
-if (isset($_GET["id"]) && $_GET["id"]!=="") echo "<li class=\"btn-crumb\"><a href='/products.php?category=".$_GET["category"]."&id=".$_GET["id"]."' typeof=\"v:Breadcrumb\"><span class=\"text-el\">".$main->get_record($main->pre."pages",$_GET["id"],"pages_name")."</span><span class=\"divider\">&#9658;</span></a></li>";
+if (isset($_GET["id"]) && $_GET["id"]!=="") echo "<li class=\"btn-crumb\"><a href='/".$_GET["category"]."/".$_GET["id"].".htm"."' typeof=\"v:Breadcrumb\"><span class=\"text-el\">".$main->get_record($main->pre."pages",$_GET["id"],"pages_name")."</span></a></li>";
        
 ?>
+
                     </ul>
 
 </div></div>
