@@ -122,7 +122,7 @@ while ($rows = mysql_fetch_array($sql_res))
                 </li>
                 <li class="f-s_0">
                     <span class="icon_address"></span>
-                    <span class="c_w">ул. Мира, 85, офис 305</span>
+                    <span class="c_w">ул. Нижняя Красносельская 45</span>
                 </li>
                 <li class="f-s_0">
                     <span class="icon_time_work"></span>

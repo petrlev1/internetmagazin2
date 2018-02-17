@@ -4,7 +4,7 @@
     <div class="col-md-4">
         <!--        Logo-->
                     <a href="/" class="logo" style="color: #ffffff; font-size: 16px; text-decoration:none;">
-                <img src="images/logo.svg" />MyVirtualShop.ru
+                <img src="/images/logo.svg" />MyVirtualShop.ru
             </a>
             </div>
             
@@ -29,7 +29,7 @@ while ($rows = mysql_fetch_array($sql_res))
 	{
 ?>
 <li>
-            <a href="/?page=<?php echo $rows["id"]; ?>" target="_self" title="<?php echo $rows["pages_name"]; ?>"><?php echo $rows["pages_name"]; ?></a>
+            <a href="/<?php echo $rows["id"]; ?>.htm" target="_self" title="<?php echo $rows["pages_name"]; ?>"><?php echo $rows["pages_name"]; ?></a>
     </li>
 <?php 
 	}

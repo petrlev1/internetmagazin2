@@ -88,7 +88,7 @@ while ($rows1 = mysql_fetch_array($sql_res1))
 			?>
 			
 
-<font  size=2><? echo "<a href='/products.php?category=".$main->get_record($main->pre."pages",$curr_tab[$i],"pages")."&id=".$curr_tab[$i]."' class='blogsection'>".$main->search_fill_keyword($main->upfirst($rows1["cat_title"]),$keyword)."</a>"; ?></font><br><font  size=1><? echo $main->upfirst($main->search_fill_keyword(substr($desc,0,120),$keyword)).$dd; ?></font><br>
+<font  size=2><? echo "<a href='/".$main->tech_translate($main->tolower($main->get_record($main->pre."pages",$curr_tab[$i],"pages_name")),"eng")."/".$curr_tab[$i]."/".$rows1["id"].".htm' class='blogsection'>".$main->search_fill_keyword($main->upfirst($rows1["cat_title"]),$keyword)."</a>"; ?></font><br><font  size=1><? echo $main->upfirst($main->search_fill_keyword(substr($desc,0,120),$keyword)).$dd; ?></font><br>
 
 
 <? 

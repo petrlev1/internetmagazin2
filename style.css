@@ -1270,6 +1270,7 @@ background-color: #F7F7F7;
 
 /*---*/
 
+
 a:hover { text-decoration: none }
 
 .mainContent { padding: 10px 0; }
@@ -1279,6 +1280,7 @@ a:hover { text-decoration: none }
 .mainLinks a { display: inline-block; float: left; font-size: 24px; width: 24%; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-color: #f0f0f0; }
 
 .productText { margin: 10px 0 0 0 }
+.productText a { text-decoration: underline !important; }
 
 .searchForm { display: inline-block }
 

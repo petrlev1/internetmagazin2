@@ -128,7 +128,7 @@ while ($rows = mysql_fetch_array($sql_res))
 
 
 
-<td align=center><div>&nbsp;&nbsp;<a href="/products.php?category=<? echo $category; ?>&id=<? echo $rows["id1"]; ?>&cid=<? echo $rows["id2"]; ?>"><font color=black><?php echo $main->upfirst($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_title")); ?></font></a></div></td>
+<td align=center><div>&nbsp;&nbsp;<a href="/<?php echo $main->tech_translate($main->tolower($main->get_record($main->pre."pages",$rows["id1"],"pages_name")),"eng"); ?>/<?php echo $rows["id1"]; ?>/<?php echo $rows["id2"]; ?>.htm"><font color=black><?php echo $main->upfirst($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_title")); ?></font></a></div></td>
 
 
 

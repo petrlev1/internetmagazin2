@@ -73,7 +73,10 @@ $catalog = "catalog_".$_GET["id"];
 					document.cartform.submit();
 			}
 			</script>
+			
+			
 			<form class="cart" name="cartform" method="post" enctype='multipart/form-data' action="/products.php?category=<?php echo $_GET["category"]; ?>&id=<?php echo $_GET["id"]; ?>&cid=<?php echo $_GET["cid"]; ?>&incart=<?php echo $_GET["cid"]; ?>">
+			
 
 
 		

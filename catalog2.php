@@ -45,6 +45,7 @@ if (isset($_GET["page"]) && $_GET["page"]!=="")
 
 	<input type="submit">
 </form>
+
 <!--
 <div class="izo-zoom">
   <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>

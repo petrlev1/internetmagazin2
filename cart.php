@@ -13,8 +13,6 @@ if (mysql_num_rows(mysql_query("SELECT * FROM $main->temptable WHERE id!='1'"))=
 
 <td align=center><font >Наименование</font></td>
 
-<td align=center><font >Характеристики</font></div></td>
-
 <td align=center><font >Цена</font></div></td>
 
 
@@ -38,7 +36,7 @@ while ($rows = mysql_fetch_array($sql_res))
 {
 	//echo $main->shtuk($rows["id2"],$rows["id1"]);
 
-	$category = $main->get_record($main->pre."pages",$rows["id1"],"pages");
+	$category = $main->tech_translate($main->tolower($main->get_record($main->pre."pages",$rows["id1"],"pages_name")),"eng");
 
 	$cat_price = $rows["param1"];
 
@@ -57,7 +55,7 @@ while ($rows = mysql_fetch_array($sql_res))
 	<tr align="left">
 
 
-<td ><center><a href="/products.php?category=<? echo $category; ?>&id=<? echo $rows["id1"]; ?>&cid=<? echo $rows["id2"]; ?>">
+<td ><center><a href="/<?php echo $category; ?>/<?php echo $rows["id1"]; ?>/<?php echo $rows["id2"]; ?>.htm">
 
 <img src="<?php echo $img;  ?>" style ="height: 40px;" alt="<?php echo $main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_title"); ?>" border="0">
 
@@ -69,32 +67,11 @@ while ($rows = mysql_fetch_array($sql_res))
 
 
 
-<td align="center" ><div class="catalogTextFont">&nbsp;&nbsp;<a href="/products.php?category=<? echo $category; ?>&id=<? echo $rows["id1"]; ?>&cid=<? echo $rows["id2"]; ?>"><b><font color=black><?php echo $main->upfirst($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_title")); ?></font></b></a><?php echo $brend; ?></div></td>
+<td align="center" ><div class="catalogTextFont">&nbsp;&nbsp;
 
-<td align="left" ><div  align="left" style="font-size: 8pt;">
+<a href="/<?php echo $category; ?>/<?php echo $rows["id1"]; ?>/<?php echo $rows["id2"]; ?>.htm"><b><font color=black><?php echo $main->upfirst($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_title")); ?></font></b></a>
 
-<b>Производитель:</b>&nbsp;&nbsp;<?php 
-
-if ($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_reserve")=="") echo "-";
-else echo $main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_reserve"); 
-
-
-?>
-<br>
-<b>Толщина:</b>&nbsp;&nbsp;<?php 
-
-if ($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_sizes")=="") echo "-";
-else echo $main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_sizes");
-
-?>
-
-<br>
-<b>Цвет:</b>&nbsp;&nbsp;<?php 
-
-if ($main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_colors")=="") echo "-";
-else echo $main->get_record("catalog_".$rows["id1"],$rows["id2"],"cat_colors"); ?>
-
-</div></td>
+<?php echo $brend; ?></div></td>
 
 
 
