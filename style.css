@@ -1277,7 +1277,9 @@ a:hover { text-decoration: none }
 
 
 .mainLinks { min-height: 500px; }
-.mainLinks a { display: inline-block; float: left; font-size: 24px; width: 24%; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-color: #f0f0f0; }
+.mainLinks a { display: inline-block; float: left; font-size: 24px; width: 24%; height: 220px; margin: 5px; padding: 25px 10px; text-align: center; background-position: center; background-size: contain; background-repeat: no-repeat }
+
+.mainLinks a span { background-color: #f9fcff; padding: 0 0 5px 0 }
 
 .productText { margin: 10px 0 0 0 }
 .productText a { text-decoration: underline !important; }
