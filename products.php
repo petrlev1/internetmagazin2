@@ -37,11 +37,6 @@ $pagename = $rows2["pages_name"];
 }
 
 
-$description = "Интернет-магазин стильной одежды Moonshine";
-
-$keywords = "стильная одежда, молодежная одежда";
-
-
 $sql_q = "SELECT * FROM ".$main->pre."pages WHERE publ='0' AND id='$page' AND pages=''";
 $sql_res = $main->q($sql_q);
 $rows = mysql_fetch_array($sql_res);
@@ -228,12 +223,12 @@ if (isset($_GET["id"]) && $_GET["id"]!=="")
 </div></div>
 <!--End. Make bread crumbs -->
 
-    <div class="container-fluid">
+    <div itemscope itemtype="http://schema.org/Product" class="container-fluid">
        
             <!-- Start. Category name and count products in category-->
             <div class="f-s_0 title-category">
                 <div class="frame-title">
-                    <h1 class="title"><?php 
+                    <h1 itemprop="name" class="title"><?php 
 
 					if (isset($_GET["cid"]) && $_GET["cid"]!=="")
 					

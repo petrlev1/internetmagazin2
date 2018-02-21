@@ -41,62 +41,35 @@
 </li>
 </ul>
 </div>    </div>
-    <div class="frame-seo-text">
-        <div class="container">
-            <div class="text seo-text"></div>
-        </div>
-    </div>
+    
 </div>
 <div class="content-footer">
-    <div class="container">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-1"></div>
         <!--Start. Load menu in footer-->
-        <div class="box-1">
+        <div class="col-md-4">
             <div class="inside-padd">
                 <div class="c_w">© MyVirtualShop.ru</div>
                 <div class="text-el">Все права защищены</div>
           </div>
       </div>
-      <div class="box-2">
-        <div class="inside-padd">
-            <div class="main-title">Каталог</div>
-            <ul class="footer-category-menu nav nav-vertical">
-                <?php
-
-			echo $sql_q = "SELECT * FROM ".$main->pre."pages WHERE publ!='1' AND topics='ukatalog' AND L1='' ORDER BY sort ASC LIMIT 0,6";
-$sql_res = $main->q($sql_q);
-
-while ($rows = mysql_fetch_array($sql_res))
-{
-
-				?>
-				<li><a href="#" title="<?php echo $rows["pages_name"]; ?>" class="title"><?php echo $rows["pages_name"]; ?></a></li>
-	<?php 
-} 
-				
-?>
-
-      </ul>
-        </div>
-    </div>
+      
     <!--End. Load menu in footer-->
 
     <!--Start. User menu-->
-    <div class="box-3">
+    <div class="col-md-4">
         <div class="inside-padd">
             <div class="main-title">Информация</div>
             <ul class="nav nav-vertical">
                 
-<li><a href="#" title="Про наш магазин">Про наш магазин</a></li>
+<li><a href="/125.htm" title="Про наш магазин">О компании</a></li>
 
-<li><a href="#" title="Гарантии">Гарантии</a></li>
+<li><a href="/696.htm" title="Гарантии">Партнеры</a></li>
 
-<li><a href="#" title="Возврат товара">Возврат товара</a></li>
+<li><a href="/697.htm" title="Возврат товара">Доставка и оплата</a></li>
 
-<li><a href="#" title="Бренды">Бренды</a></li>
-
-<li><a href="#" title="Доставка и оплата">Доставка и оплата</a></li>
-
-<li><a href="#" title="Контакты">Контакты</a></li>
+<li><a href="/123.htm" title="Контакты">Контакты</a></li>
 
             </ul>
         </div>
@@ -104,7 +77,7 @@ while ($rows = mysql_fetch_array($sql_res))
     <!--End. User menu-->
 
     <!--Start. Info block-->
-    <div class="box-4">
+    <div class="col-md-3">
         <div class="inside-padd">
             <div class="main-title">Контакты</div>
             <ul>
@@ -133,15 +106,6 @@ while ($rows = mysql_fetch_array($sql_res))
     </div>
     <!--End. Info block-->
 
-    <div class="box-5">
-        <div class="inside-padd">
-            <div class="f-s_0">
-                <span class="icon_phone_footer"></span>
-                <span class="text-el"></span>
-            </div>
-
-            <div class="engine"></div>
-        </div>
     </div>
 </div>
 </div>

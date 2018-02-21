@@ -200,10 +200,6 @@ a.f-s_0{display: inline-block;text-decoration: none;}
 /*base nav*/
 nav table { width: auto; }
 nav a{text-decoration: none;}
-.nav > li{float: left;position: relative;}
-.nav.nav-vertical > li{float: none;}
-.nav-vertical{margin-bottom: 10px;}
-.default-frame .nav-vertical{margin-bottom: 0;}
 .nav > li > a, .nav > li > span, .nav > li > button{display: block;}
 /*/base nav*/
 
@@ -1078,7 +1074,6 @@ td.frame-cur-sum-price {vertical-align: middle;padding-left: 10px;padding-right:
 /*footer*/
 .h-footer{ }
 footer{ min-height:463px; margin: 0 auto 0;position: relative; }
-footer .content-footer{min-height: 245px;}
 
 .content-footer li{margin-bottom: 4px;}
 footer ul li{position: relative;}
@@ -1298,6 +1293,9 @@ a:hover { text-decoration: none }
 .frame-drop-menu1 .items li:hover { background-color: #cccccc; }
 
 
+.nav-vertical li { display:  block; width: 100%; }
+
+footer a { color: #ffffff; }
 
 
 @media (max-width: 768px) {
